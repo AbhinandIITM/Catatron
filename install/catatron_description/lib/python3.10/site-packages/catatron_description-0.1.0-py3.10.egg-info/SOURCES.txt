@@ -9,8 +9,8 @@ setup.py
 ../../build/catatron_description/catatron_description.egg-info/top_level.txt
 ../../build/catatron_description/catatron_description.egg-info/zip-safe
 catatron_description/__init__.py
+catatron_description/controller.py
 config/joint_controller.yaml
 launch/robot.launch.py
 resource/catatron_description
 urdf/catatron.urdf
-worlds/empty_world.world
