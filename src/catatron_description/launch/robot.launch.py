@@ -10,7 +10,6 @@ def generate_launch_description():
     # Get share directories for the packages
     share_dir = get_package_share_directory('catatron_description')
     pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
-    pkg_controller_manager = get_package_share_directory('Joint_controller')
     
     # Launch configurations (arguments you can change from the command line)
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
@@ -63,18 +62,13 @@ def generate_launch_description():
         parameters=[{'use_sim_time': use_sim_time}],
     )
 
-    # Controller Spawner node
-    controller_spawner_cmd = Node(
+    # ros2_control_node for controlling the robot
+    ros2_control_node_cmd = Node(
         package='controller_manager',
-        executable='spawner',
-        name='controller_spawner',
+        executable='ros2_control_node',
+        name='controller_manager',
         output='screen',
-        arguments=[
-            'joint_states_controller',
-            'hip1_fl', 'hip1_fr', 'hip1_bl', 'hip1_br',
-            'hip2_fl', 'hip2_fr', 'hip2_bl', 'hip2_br',
-            'knee_fl', 'knee_fr', 'knee_bl', 'knee_br'
-        ]
+        parameters=[{'use_sim_time': use_sim_time}],
     )
 
     # Return LaunchDescription with specified order of execution
@@ -87,6 +81,6 @@ def generate_launch_description():
         gazebo_cmd,
         spawn_catatron,
 
-        # Finally, load the controllers
-        controller_spawner_cmd,
+        # Finally, start the ros2_control_node for the robot controllers
+        ros2_control_node_cmd,
     ])

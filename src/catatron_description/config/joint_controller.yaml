@@ -1,69 +1,132 @@
-Joint_controller:
-  
-  joint_states_controller:
-      type: joint_state_controller/JointStateController
-      publish_rate: 25
+---
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+    joint_trajectory_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
 
-  # FL Controllers ------------------------------------------------------------ 
-  hip1_fl:
+joint_trajectory_controller:
+    # FL Controllers
+    hip1_fl:
       type: effort_controllers/JointPositionController
       joint: hip1_fl
-      pid: {p: 9, i: 0.03, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}
-        
-  hip1_fr:
+      pid:
+        p: 9
+        i: 0.03
+        d: 0.3055
+        i_clamp_min: -1000
+        i_clamp_max: 1000
+
+    hip1_fr:
       type: effort_controllers/JointPositionController
       joint: hip1_fr
-      pid: {p: 9, i: 0.03, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}
-        
-  hip1_bl:
+      pid:
+        p: 9
+        i: 0.03
+        d: 0.3055
+        i_clamp_min: -1000
+        i_clamp_max: 1000
+
+    hip1_bl:
       type: effort_controllers/JointPositionController
       joint: hip1_bl
-      pid: {p: 9, i: 0.03, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}
+      pid:
+        p: 9
+        i: 0.03
+        d: 0.3055
+        i_clamp_min: -1000
+        i_clamp_max: 1000
 
-  # FR Controllers ------------------------------------------------------------ 
-  hip1_br:
+    # FR Controllers
+    hip1_br:
       type: effort_controllers/JointPositionController
       joint: hip1_br
-      pid: {p: 9, i: 0.03, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}
-        
-  hip2_fl:
+      pid:
+        p: 9
+        i: 0.03
+        d: 0.3055
+        i_clamp_min: -1000
+        i_clamp_max: 1000
+
+    hip2_fl:
       type: effort_controllers/JointPositionController
       joint: hip2_fl
-      pid: {p: 9, i: 0.03, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}
-        
-  hip2_fr:
+      pid:
+        p: 9
+        i: 0.03
+        d: 0.3055
+        i_clamp_min: -1000
+        i_clamp_max: 1000
+
+    hip2_fr:
       type: effort_controllers/JointPositionController
       joint: hip2_fr
-      pid: {p: 9, i: 0.03, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}
+      pid:
+        p: 9
+        i: 0.03
+        d: 0.3055
+        i_clamp_min: -1000
+        i_clamp_max: 1000
 
-  # RR Controllers ------------------------------------------------------------ 
-  hip2_bl:
+    # RR Controllers
+    hip2_bl:
       type: effort_controllers/JointPositionController
       joint: hip2_bl
-      pid: {p: 9, i: 0.03, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}
-        
-  hip2_br:
+      pid:
+        p: 9
+        i: 0.03
+        d: 0.3055
+        i_clamp_min: -1000
+        i_clamp_max: 1000
+
+    hip2_br:
       type: effort_controllers/JointPositionController
-      joint: hip2_br"
-      pid: {p: 9, i: 0.03, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}
-        
-  knee_fl:
+      joint: hip2_br
+      pid:
+        p: 9
+        i: 0.03
+        d: 0.3055
+        i_clamp_min: -1000
+        i_clamp_max: 1000
+
+    knee_fl:
       type: effort_controllers/JointPositionController
       joint: knee_fl
-      pid: {p: 9, i: 0, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}
+      pid:
+        p: 9
+        i: 0
+        d: 0.3055
+        i_clamp_min: -1000
+        i_clamp_max: 1000
 
-  # RL Controllers ------------------------------------------------------------     
-  knee_fr:
+    knee_fr:
       type: effort_controllers/JointPositionController
       joint: knee_fr
-      pid: {p: 9, i: 0.03, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}
-        
-  knee_bl:
+      pid:
+        p: 9
+        i: 0.03
+        d: 0.3055
+        i_clamp_min: -1000
+        i_clamp_max: 1000
+
+    knee_bl:
       type: effort_controllers/JointPositionController
       joint: knee_bl
-      pid: {p: 9, i: 0.03, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}
-        
-  knee_br:
+      pid:
+        p: 9
+        i: 0.03
+        d: 0.3055
+        i_clamp_min: -1000
+        i_clamp_max: 1000
+
+    knee_br:
       type: effort_controllers/JointPositionController
       joint: knee_br
-      pid: {p: 9, i: 0.03, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}
+      pid:
+        p: 9
+        i: 0.03
+        d: 0.3055
+        i_clamp_min: -1000
+        i_clamp_max: 1000
