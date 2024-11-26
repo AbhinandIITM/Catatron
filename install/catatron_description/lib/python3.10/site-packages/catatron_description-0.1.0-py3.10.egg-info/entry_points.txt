@@ -1,0 +1,3 @@
+[console_scripts]
+robot.launch = catatron_description.robot.launch:generate_launch_description
+

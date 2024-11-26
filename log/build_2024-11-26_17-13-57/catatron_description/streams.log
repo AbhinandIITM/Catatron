@@ -1,0 +1,21 @@
+[0.375s] Invoking command in '/home/sudharsan/catatron_ws/src/catatron_description': PYTHONPATH=/home/sudharsan/catatron_ws/build/catatron_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sudharsan/catatron_ws/install/catatron_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/catatron_description build --build-base /home/sudharsan/catatron_ws/build/catatron_description/build install --record /home/sudharsan/catatron_ws/build/catatron_description/install.log --single-version-externally-managed install_data
+[0.528s] running egg_info
+[0.528s] writing ../../build/catatron_description/catatron_description.egg-info/PKG-INFO
+[0.529s] writing dependency_links to ../../build/catatron_description/catatron_description.egg-info/dependency_links.txt
+[0.529s] writing entry points to ../../build/catatron_description/catatron_description.egg-info/entry_points.txt
+[0.529s] writing requirements to ../../build/catatron_description/catatron_description.egg-info/requires.txt
+[0.529s] writing top-level names to ../../build/catatron_description/catatron_description.egg-info/top_level.txt
+[0.531s] reading manifest file '../../build/catatron_description/catatron_description.egg-info/SOURCES.txt'
+[0.532s] writing manifest file '../../build/catatron_description/catatron_description.egg-info/SOURCES.txt'
+[0.532s] running build
+[0.532s] running build_py
+[0.532s] running install
+[0.532s] running install_lib
+[0.533s] running install_data
+[0.533s] running install_egg_info
+[0.535s] removing '/home/sudharsan/catatron_ws/install/catatron_description/lib/python3.10/site-packages/catatron_description-0.1.0-py3.10.egg-info' (and everything under it)
+[0.535s] Copying ../../build/catatron_description/catatron_description.egg-info to /home/sudharsan/catatron_ws/install/catatron_description/lib/python3.10/site-packages/catatron_description-0.1.0-py3.10.egg-info
+[0.535s] running install_scripts
+[0.548s] Installing robot.launch script to /home/sudharsan/catatron_ws/install/catatron_description/lib/catatron_description
+[0.549s] writing list of installed files to '/home/sudharsan/catatron_ws/build/catatron_description/install.log'
+[0.564s] Invoked command in '/home/sudharsan/catatron_ws/src/catatron_description' returned '0': PYTHONPATH=/home/sudharsan/catatron_ws/build/catatron_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sudharsan/catatron_ws/install/catatron_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/catatron_description build --build-base /home/sudharsan/catatron_ws/build/catatron_description/build install --record /home/sudharsan/catatron_ws/build/catatron_description/install.log --single-version-externally-managed install_data

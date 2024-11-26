@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/catatron_description/catatron_description.egg-info/PKG-INFO
+../../build/catatron_description/catatron_description.egg-info/SOURCES.txt
+../../build/catatron_description/catatron_description.egg-info/dependency_links.txt
+../../build/catatron_description/catatron_description.egg-info/entry_points.txt
+../../build/catatron_description/catatron_description.egg-info/requires.txt
+../../build/catatron_description/catatron_description.egg-info/top_level.txt
+../../build/catatron_description/catatron_description.egg-info/zip-safe
+catatron_description/__init__.py
+config/joint_controller.yaml
+launch/robot.launch.py
+resource/catatron_description
+urdf/catatron.urdf
+worlds/empty_world.world

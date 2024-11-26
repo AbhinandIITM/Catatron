@@ -1,0 +1,24 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/sudharsan/Downloads/catatron_ws/install/catatron_description/lib/python3.10/site-packages",
+        "/home/sudharsan/turtlesim_ws/install/wd_task_1a/lib/python3.10/site-packages",
+        "/home/sudharsan/turtlesim_ws/install/turtlesim/local/lib/python3.10/dist-packages",
+        "/home/sudharsan/pico_ws/install/swift_msgs/local/lib/python3.10/dist-packages",
+        "/home/sudharsan/pico_ws/install/pid_msg/local/lib/python3.10/dist-packages",
+        "/home/sudharsan/pico_ws/install/mav_planning_msgs/local/lib/python3.10/dist-packages",
+        "/home/sudharsan/pico_ws/install/mav_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/sudharsan/Downloads/catatron_ws/install/catatron_description/lib/python3.10/site-packages",
+        "/home/sudharsan/turtlesim_ws/install/wd_task_1a/lib/python3.10/site-packages",
+        "/home/sudharsan/turtlesim_ws/install/turtlesim/local/lib/python3.10/dist-packages",
+        "/home/sudharsan/pico_ws/install/swift_msgs/local/lib/python3.10/dist-packages",
+        "/home/sudharsan/pico_ws/install/pid_msg/local/lib/python3.10/dist-packages",
+        "/home/sudharsan/pico_ws/install/mav_planning_msgs/local/lib/python3.10/dist-packages",
+        "/home/sudharsan/pico_ws/install/mav_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
