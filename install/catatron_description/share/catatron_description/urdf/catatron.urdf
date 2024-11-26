@@ -611,22 +611,141 @@
     <child  link="feet_br"/>
     <origin xyz="0.00000 0.00834 -0.10000"/>
   </joint>
-  <ros2_control>
-    <controller name="joint_state_controller" type="joint_state_controller/JointStateController">
-            <hardware_interface>JointStateInterface</hardware_interface>
-    </controller>
-    <controller name="position_controllers" type="effort_controllers/JointPositionController">
-            <hardware_interface>EffortJointInterface</hardware_interface>
-            <!-- Specify the joints you want to control -->
-            <joint>hip1_fl</joint>
-            <joint>hip1_fr</joint>
-            <joint>hip1_br</joint>
-            <joint>hip1_bl</joint>
-            <joint>hip2_bl</joint>
-            <joint>hip2_br</joint>
-            <joint>hip2_fl</joint>
-            <joint>hip2_fr</joint>
-            <!-- Add all joints that you want to control -->
-      </controller>
-    </ros2_control>
+
+
+  <ros2_control name="GazeboSystem" type="system">
+  <hardware>
+    <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+  </hardware>
+
+  <!-- Hip1 Joints -->
+  <joint name="hip1_bl">
+    <command_interface name="position">
+      <param name="min">-0.78540</param>
+      <param name="max">1.57080</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+    <state_interface name="effort"/>
+  </joint>
+
+  <joint name="hip1_fr">
+    <command_interface name="position">
+      <param name="min">-0.78540</param>
+      <param name="max">1.57080</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+    <state_interface name="effort"/>
+  </joint>
+
+  <joint name="hip1_fl">
+    <command_interface name="position">
+      <param name="min">-0.78540</param>
+      <param name="max">1.57080</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+    <state_interface name="effort"/>
+  </joint>
+
+  <joint name="hip1_br">
+    <command_interface name="position">
+      <param name="min">-0.78540</param>
+      <param name="max">1.57080</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+    <state_interface name="effort"/>
+  </joint>
+
+  <!-- Hip2 Joints -->
+  <joint name="hip2_bl">
+    <command_interface name="position">
+      <param name="min">0.00000</param>
+      <param name="max">2.35619</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+    <state_interface name="effort"/>
+  </joint>
+
+  <joint name="hip2_fr">
+    <command_interface name="position">
+      <param name="min">0.00000</param>
+      <param name="max">2.35619</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+    <state_interface name="effort"/>
+  </joint>
+
+  <joint name="hip2_fl">
+    <command_interface name="position">
+      <param name="min">0.00000</param>
+      <param name="max">2.35619</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+    <state_interface name="effort"/>
+  </joint>
+
+  <joint name="hip2_br">
+    <command_interface name="position">
+      <param name="min">0.00000</param>
+      <param name="max">2.35619</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+    <state_interface name="effort"/>
+  </joint>
+
+  <!-- Knee Joints -->
+  <joint name="knee_bl">
+    <command_interface name="position">
+      <param name="min">-2.35619</param>
+      <param name="max">-0.52360</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+    <state_interface name="effort"/>
+  </joint>
+
+  <joint name="knee_fr">
+    <command_interface name="position">
+      <param name="min">-2.35619</param>
+      <param name="max">-0.52360</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+    <state_interface name="effort"/>
+  </joint>
+
+  <joint name="knee_fl">
+    <command_interface name="position">
+      <param name="min">-2.35619</param>
+      <param name="max">-0.52360</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+    <state_interface name="effort"/>
+  </joint>
+
+  <joint name="knee_br">
+    <command_interface name="position">
+      <param name="min">-2.35619</param>
+      <param name="max">-0.52360</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+    <state_interface name="effort"/>
+  </joint>
+</ros2_control>
+
+<gazebo>
+  <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+    <parameters>/home/abhinand/Envisage/catatron_ws/src/catatron_description/config/joint_controller.yaml</parameters>
+  </plugin>
+</gazebo>
+
 </robot>
