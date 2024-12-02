@@ -63,7 +63,8 @@ def generate_launch_description():
     name='spawn_catatron',
     output='screen',
     arguments=['-entity', 'catatron', '-file', urdf_file_path],
-    parameters=[{'use_sim_time': use_sim_time, 'timeout': 60}],  # Set timeout as a parameter
+    # parameters=[{'use_sim_time': use_sim_time, 'timeout': 30}],  # Set timeout as a parameter
+    parameters=[{'use_sim_time': use_sim_time}], 
 )
 
     joint_state_broadcaster = Node(
@@ -77,14 +78,6 @@ def generate_launch_description():
         arguments=["joint_trajectory_controller","-c","/controller_manager"],
     )
 
-    # ros2_control_node for controlling the robot
-    ros2_control_node_cmd = Node(
-        package='controller_manager',
-        executable='ros2_control_node',
-        name='controller_manager',
-        output='screen',
-        parameters=[{'use_sim_time': use_sim_time}],
-    )
 
     # Return LaunchDescription with specified order of execution
     return LaunchDescription([
@@ -96,7 +89,7 @@ def generate_launch_description():
         ),
         # Ensure that the robot state and joint state publisher are launched first
         robot_state_publisher_cmd,
-        #joint_state_publisher_cmd,
+        joint_state_publisher_cmd,
 
         # Then load the Gazebo world and spawn the robot
         gazebo_cmd,

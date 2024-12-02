@@ -28,6 +28,7 @@ setup(
     'console_scripts': [
         'robot_launch = catatron_description.robot.launch:generate_launch_description',
         'controller = catatron_description.controller:main', 
+        'inv_kin = catatron_description.inv_kin:main',
     ],
     },
 )

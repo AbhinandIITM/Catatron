@@ -1,6 +1,4 @@
-/home/abhinand/Envisage/catatron_ws/install/catatron_description/lib/python3.10/site-packages/catatron_description/controller.py
 /home/abhinand/Envisage/catatron_ws/install/catatron_description/lib/python3.10/site-packages/catatron_description/__init__.py
-/home/abhinand/Envisage/catatron_ws/install/catatron_description/lib/python3.10/site-packages/catatron_description/__pycache__/controller.cpython-310.pyc
 /home/abhinand/Envisage/catatron_ws/install/catatron_description/lib/python3.10/site-packages/catatron_description/__pycache__/__init__.cpython-310.pyc
 /home/abhinand/Envisage/catatron_ws/install/catatron_description/share/ament_index/resource_index/packages/catatron_description
 /home/abhinand/Envisage/catatron_ws/install/catatron_description/share/catatron_description/package.xml
@@ -8,7 +6,8 @@
 /home/abhinand/Envisage/catatron_ws/install/catatron_description/share/catatron_description/urdf/catatron.urdf
 /home/abhinand/Envisage/catatron_ws/install/catatron_description/share/catatron_description/mesh_files/dae_files
 /home/abhinand/Envisage/catatron_ws/install/catatron_description/share/catatron_description/config/joint_controller.yaml
-/home/abhinand/Envisage/catatron_ws/install/catatron_description/share/catatron_description/scripts
+/home/abhinand/Envisage/catatron_ws/install/catatron_description/share/catatron_description/scripts/controller.py
+/home/abhinand/Envisage/catatron_ws/install/catatron_description/share/catatron_description/scripts/inv_kin.py
 /home/abhinand/Envisage/catatron_ws/install/catatron_description/lib/python3.10/site-packages/catatron_description-0.1.0-py3.10.egg-info/PKG-INFO
 /home/abhinand/Envisage/catatron_ws/install/catatron_description/lib/python3.10/site-packages/catatron_description-0.1.0-py3.10.egg-info/zip-safe
 /home/abhinand/Envisage/catatron_ws/install/catatron_description/lib/python3.10/site-packages/catatron_description-0.1.0-py3.10.egg-info/entry_points.txt
@@ -17,4 +16,5 @@
 /home/abhinand/Envisage/catatron_ws/install/catatron_description/lib/python3.10/site-packages/catatron_description-0.1.0-py3.10.egg-info/SOURCES.txt
 /home/abhinand/Envisage/catatron_ws/install/catatron_description/lib/python3.10/site-packages/catatron_description-0.1.0-py3.10.egg-info/dependency_links.txt
 /home/abhinand/Envisage/catatron_ws/install/catatron_description/lib/catatron_description/controller
+/home/abhinand/Envisage/catatron_ws/install/catatron_description/lib/catatron_description/inv_kin
 /home/abhinand/Envisage/catatron_ws/install/catatron_description/lib/catatron_description/robot_launch

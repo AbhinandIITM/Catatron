@@ -6,7 +6,7 @@
   <link name="base_link">
     <visual>
       <geometry>
-        <mesh filename= "file:///home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/base.dae"/>
+        <mesh filename= "/home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/base.dae"/>
       </geometry>
       <!-- <material name="blue"/> -->
     </visual>
@@ -23,13 +23,21 @@
       <geometry>
         <box size="0.260 0.160 0.090"/>
       </geometry>
+  <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>100</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
 
   <link name="lidar_link">
     <visual>
       <geometry>
-        <mesh filename= "file:///home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/lidar.dae"/>
+        <mesh filename= "/home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/lidar.dae"/>
       </geometry>
     </visual>
     <inertial>
@@ -45,6 +53,14 @@
       <geometry>
         <box size="0.080 0.060 0.050"/>
       </geometry>
+  <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>100</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
 
@@ -88,6 +104,14 @@
       <geometry>
         <box size="0.002 0.002 0.002"/>
       </geometry>
+  <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>100</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
 
@@ -109,6 +133,14 @@
       <geometry>
         <box size="0.002 0.002 0.002"/>
       </geometry>
+  <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>100</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
 
@@ -130,13 +162,21 @@
       <geometry>
         <box size="0.002 0.002 0.002"/>
       </geometry>
+  <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>100</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
 
   <link name="hip_fl_link">
     <visual>
       <geometry>
-        <mesh filename= "file:///home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/hip_fl.dae"/>
+        <mesh filename= "/home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/hip_fl.dae"/>
       </geometry>
     </visual>
     <inertial>
@@ -152,13 +192,21 @@
       <geometry>
         <box size="0.050 0.050 0.070"/>
       </geometry>
+  <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>100</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
 
   <link name="hip_fr_link">
     <visual>
       <geometry>
-        <mesh filename= "file:///home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/hip_fr.dae"/>
+        <mesh filename= "/home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/hip_fr.dae"/>
       </geometry>
     </visual>
     <inertial>
@@ -174,13 +222,21 @@
       <geometry>
         <box size="0.050 0.050 0.070"/>
       </geometry>
+  <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>100</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
 
   <link name="hip_bl_link">
     <visual>
       <geometry>
-        <mesh filename= "file:///home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/hip_bl.dae"/>
+        <mesh filename= "/home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/hip_bl.dae"/>
       </geometry>
     </visual>
     <inertial>
@@ -196,13 +252,21 @@
       <geometry>
         <box size="0.050 0.050 0.070"/>
       </geometry>
+  <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>100</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
 
   <link name="hip_br_link">
     <visual>
       <geometry>
-        <mesh filename= "file:///home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/hip_br.dae"/>
+        <mesh filename= "/home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/hip_br.dae"/>
       </geometry>
     </visual>
     <inertial>
@@ -218,13 +282,21 @@
       <geometry>
         <box size="0.050 0.050 0.070"/>
       </geometry>
+  <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>100</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
 
   <link name="femur_fl_link">
     <visual>
       <geometry>
-        <mesh filename= "file:///home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/femur_l.dae"/>
+        <mesh filename= "/home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/femur_l.dae"/>
       </geometry>
     </visual>
     <inertial>
@@ -238,15 +310,23 @@
     <collision>
       <origin xyz="0.000 0.015 -0.045" rpy ="0.000 0.000 0.000"/>
       <geometry>
-        <box size="0.040 0.070 0.130"/>
+        <box size="0.040 0.070 0.110"/>
       </geometry>
+  <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>100</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
 
   <link name="femur_fr_link">
     <visual>
       <geometry>
-        <mesh filename= "file:///home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/femur_r.dae"/>
+        <mesh filename= "/home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/femur_r.dae"/>
       </geometry>
     </visual>
     <inertial>
@@ -260,15 +340,23 @@
     <collision>
       <origin xyz="0.000 -0.015 -0.045" rpy ="0.000 0.000 0.000"/>
       <geometry>
-        <box size="0.040 0.070 0.130"/>
+        <box size="0.040 0.070 0.110"/>
       </geometry>
+  <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>100</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
 
   <link name="femur_bl_link">
     <visual>
       <geometry>
-        <mesh filename= "file:///home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/femur_l.dae"/>
+        <mesh filename= "/home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/femur_l.dae"/>
       </geometry>
     </visual>
     <inertial>
@@ -282,15 +370,23 @@
     <collision>
       <origin xyz="0.000 0.015 -0.045" rpy ="0.000 0.000 0.000"/>
       <geometry>
-        <box size="0.040 0.070 0.130"/>
+        <box size="0.040 0.070 0.110"/>
       </geometry>
+  <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>100</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
 
   <link name="femur_br_link">
     <visual>
       <geometry>
-        <mesh filename= "file:///home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/femur_r.dae"/>
+        <mesh filename= "/home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/femur_r.dae"/>
       </geometry>
     </visual>
     <inertial>
@@ -304,15 +400,23 @@
     <collision>
       <origin xyz="0.000 -0.015 -0.045" rpy ="0.000 0.000 0.000"/>
       <geometry>
-        <box size="0.040 0.070 0.130"/>
+        <box size="0.040 0.070 0.110"/>
       </geometry>
+  <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>100</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
 
   <link name="tibia_fl_link">
     <visual>
       <geometry>
-        <mesh filename= "file:///home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/tibia_l.dae"/>
+        <mesh filename= "/home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/tibia_l.dae"/>
       </geometry>
     </visual>
     <inertial>
@@ -323,12 +427,26 @@
         iyy="0.00159" iyz="0.00000"
         izz="0.00147"/>
     </inertial>
+    <collision>
+      <origin xyz="0.000 -0.015 -0.045" rpy ="0.000 0.000 0.000"/>
+      <geometry>
+        <box size="0.040 0.070 0.110"/>
+      </geometry>
+  <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>100</mu2>
+          </ode>
+        </friction>
+      </surface>
+    </collision>
   </link>
 
   <link name="tibia_fr_link">
     <visual>
       <geometry>
-        <mesh filename= "file:///home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/tibia_r.dae"/>
+        <mesh filename= "/home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/tibia_r.dae"/>
       </geometry>
     </visual>
     <inertial>
@@ -339,12 +457,26 @@
         iyy="0.00159" iyz="0.00000"
         izz="0.00147"/>
     </inertial>
+    <collision>
+      <origin xyz="0.000 -0.015 -0.045" rpy ="0.000 0.000 0.000"/>
+      <geometry>
+        <box size="0.040 0.070 0.110"/>
+      </geometry>
+  <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>100</mu2>
+          </ode>
+        </friction>
+      </surface>
+    </collision>
   </link>
 
   <link name="tibia_bl_link">
     <visual>
       <geometry>
-        <mesh filename= "file:///home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/tibia_l.dae"/>
+        <mesh filename= "/home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/tibia_l.dae"/>
       </geometry>
     </visual>
     <inertial>
@@ -355,12 +487,26 @@
         iyy="0.00159" iyz="0.00000"
         izz="0.00147"/>
     </inertial>
+    <collision>
+      <origin xyz="0.000 -0.015 -0.045" rpy ="0.000 0.000 0.000"/>
+      <geometry>
+        <box size="0.040 0.070 0.110"/>
+      </geometry>
+  <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>100</mu2>
+          </ode>
+        </friction>
+      </surface>
+    </collision>
   </link>
 
   <link name="tibia_br_link">
     <visual>
       <geometry>
-        <mesh filename= "file:///home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/tibia_r.dae"/>
+        <mesh filename= "/home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/tibia_r.dae"/>
       </geometry>
     </visual>
     <inertial>
@@ -371,6 +517,20 @@
         iyy="0.00159" iyz="0.00000"
         izz="0.00147"/>
     </inertial>
+    <collision>
+      <origin xyz="0.000 -0.015 -0.045" rpy ="0.000 0.000 0.000"/>
+      <geometry>
+        <box size="0.040 0.070 0.110"/>
+      </geometry>
+  <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>100</mu2>
+          </ode>
+        </friction>
+      </surface>
+    </collision>
   </link>
 
   <link name="feet_fl">
@@ -392,6 +552,14 @@
       <geometry>
         <box size="0.011 0.011 0.011"/>
       </geometry>
+  <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>100</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
 
@@ -414,6 +582,14 @@
       <geometry>
         <box size="0.011 0.011 0.011"/>
       </geometry>
+  <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>100</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
 
@@ -436,6 +612,14 @@
       <geometry>
         <box size="0.011 0.011 0.011"/>
       </geometry>
+  <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>100</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
 
@@ -458,6 +642,14 @@
       <geometry>
         <box size="0.011 0.011 0.011"/>
       </geometry>
+  <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>100</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
 
@@ -618,7 +810,7 @@
     <plugin>gazebo_ros2_control/GazeboSystem</plugin>
   </hardware>
 
-  <!-- Hip1 Joints -->
+  
   <joint name="hip1_bl">
     <command_interface name="position">
       <param name="min">-0.78540</param>
@@ -659,7 +851,7 @@
     <state_interface name="effort"/>
   </joint>
 
-  <!-- Hip2 Joints -->
+  
   <joint name="hip2_bl">
     <command_interface name="position">
       <param name="min">0.00000</param>
@@ -700,7 +892,7 @@
     <state_interface name="effort"/>
   </joint>
 
-  <!-- Knee Joints -->
+  
   <joint name="knee_bl">
     <command_interface name="position">
       <param name="min">-2.35619</param>
@@ -746,6 +938,6 @@
   <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
     <parameters>/home/abhinand/Envisage/catatron_ws/src/catatron_description/config/joint_controller.yaml</parameters>
   </plugin>
-</gazebo>
+</gazebo> 
 
 </robot>

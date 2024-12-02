@@ -16,6 +16,8 @@
   <depend>joint_state_publisher</depend>
   <depend>controller_manager</depend>
   <depend>gazebo_ros</depend>
+  <depend>numpy</depend>
+  <depend>urdf_parser_py</depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
