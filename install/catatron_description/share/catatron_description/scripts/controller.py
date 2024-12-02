@@ -11,7 +11,7 @@ from trajectory_msgs.msg import JointTrajectoryPoint
 class SteeringActionClient(Node):
 
     def __init__(self):
-        super().__init__('controller_client')
+        super().__init__('controller')
         self._action_client = ActionClient(
             self, FollowJointTrajectory, '/joint_trajectory_controller/follow_joint_trajectory')
 
