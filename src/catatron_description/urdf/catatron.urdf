@@ -23,18 +23,11 @@
       <geometry>
         <box size="0.260 0.160 0.090"/>
       </geometry>
-  <surface>
-        <friction>
-          <ode>
-            <mu>100</mu>
-            <mu2>100</mu2>
-          </ode>
-        </friction>
-      </surface>
+  
     </collision>
   </link>
 
-  <link name="lidar_link">
+  <!-- <link name="lidar_link">
     <visual>
       <geometry>
         <mesh filename= "/home/abhinand/Envisage/catatron_ws/src/catatron_description/mesh_files/dae_files/lidar.dae"/>
@@ -53,16 +46,9 @@
       <geometry>
         <box size="0.080 0.060 0.050"/>
       </geometry>
-  <surface>
-        <friction>
-          <ode>
-            <mu>100</mu>
-            <mu2>100</mu2>
-          </ode>
-        </friction>
-      </surface>
+  
     </collision>
-  </link>
+  </link> -->
 
   <link name="hip_fl_ref">
   <visual>
@@ -104,14 +90,7 @@
       <geometry>
         <box size="0.002 0.002 0.002"/>
       </geometry>
-  <surface>
-        <friction>
-          <ode>
-            <mu>100</mu>
-            <mu2>100</mu2>
-          </ode>
-        </friction>
-      </surface>
+  
     </collision>
   </link>
 
@@ -133,14 +112,7 @@
       <geometry>
         <box size="0.002 0.002 0.002"/>
       </geometry>
-  <surface>
-        <friction>
-          <ode>
-            <mu>100</mu>
-            <mu2>100</mu2>
-          </ode>
-        </friction>
-      </surface>
+  
     </collision>
   </link>
 
@@ -162,14 +134,7 @@
       <geometry>
         <box size="0.002 0.002 0.002"/>
       </geometry>
-  <surface>
-        <friction>
-          <ode>
-            <mu>100</mu>
-            <mu2>100</mu2>
-          </ode>
-        </friction>
-      </surface>
+  
     </collision>
   </link>
 
@@ -192,14 +157,7 @@
       <geometry>
         <box size="0.050 0.050 0.070"/>
       </geometry>
-  <surface>
-        <friction>
-          <ode>
-            <mu>100</mu>
-            <mu2>100</mu2>
-          </ode>
-        </friction>
-      </surface>
+  
     </collision>
   </link>
 
@@ -222,14 +180,7 @@
       <geometry>
         <box size="0.050 0.050 0.070"/>
       </geometry>
-  <surface>
-        <friction>
-          <ode>
-            <mu>100</mu>
-            <mu2>100</mu2>
-          </ode>
-        </friction>
-      </surface>
+  
     </collision>
   </link>
 
@@ -252,14 +203,7 @@
       <geometry>
         <box size="0.050 0.050 0.070"/>
       </geometry>
-  <surface>
-        <friction>
-          <ode>
-            <mu>100</mu>
-            <mu2>100</mu2>
-          </ode>
-        </friction>
-      </surface>
+  
     </collision>
   </link>
 
@@ -282,14 +226,7 @@
       <geometry>
         <box size="0.050 0.050 0.070"/>
       </geometry>
-  <surface>
-        <friction>
-          <ode>
-            <mu>100</mu>
-            <mu2>100</mu2>
-          </ode>
-        </friction>
-      </surface>
+  
     </collision>
   </link>
 
@@ -312,11 +249,11 @@
       <geometry>
         <box size="0.040 0.070 0.110"/>
       </geometry>
-  <surface>
+      <surface>
         <friction>
           <ode>
-            <mu>100</mu>
-            <mu2>100</mu2>
+            <mu>0.7</mu>
+            <mu2>0.7</mu2>
           </ode>
         </friction>
       </surface>
@@ -345,8 +282,8 @@
   <surface>
         <friction>
           <ode>
-            <mu>100</mu>
-            <mu2>100</mu2>
+            <mu>0.7</mu>
+            <mu2>0.7</mu2>
           </ode>
         </friction>
       </surface>
@@ -375,8 +312,8 @@
   <surface>
         <friction>
           <ode>
-            <mu>100</mu>
-            <mu2>100</mu2>
+            <mu>0.7</mu>
+            <mu2>0.7</mu2>
           </ode>
         </friction>
       </surface>
@@ -405,8 +342,8 @@
   <surface>
         <friction>
           <ode>
-            <mu>100</mu>
-            <mu2>100</mu2>
+            <mu>0.7</mu>
+            <mu2>0.7</mu2>
           </ode>
         </friction>
       </surface>
@@ -435,8 +372,8 @@
   <surface>
         <friction>
           <ode>
-            <mu>100</mu>
-            <mu2>100</mu2>
+            <mu>0.7</mu>
+            <mu2>0.7</mu2>
           </ode>
         </friction>
       </surface>
@@ -465,8 +402,8 @@
   <surface>
         <friction>
           <ode>
-            <mu>100</mu>
-            <mu2>100</mu2>
+            <mu>0.7</mu>
+            <mu2>0.7</mu2>
           </ode>
         </friction>
       </surface>
@@ -495,8 +432,8 @@
   <surface>
         <friction>
           <ode>
-            <mu>100</mu>
-            <mu2>100</mu2>
+            <mu>0.7</mu>
+            <mu2>0.7</mu2>
           </ode>
         </friction>
       </surface>
@@ -525,8 +462,8 @@
   <surface>
         <friction>
           <ode>
-            <mu>100</mu>
-            <mu2>100</mu2>
+            <mu>0.7</mu>
+            <mu2>0.7</mu2>
           </ode>
         </friction>
       </surface>
@@ -552,14 +489,7 @@
       <geometry>
         <box size="0.011 0.011 0.011"/>
       </geometry>
-  <surface>
-        <friction>
-          <ode>
-            <mu>100</mu>
-            <mu2>100</mu2>
-          </ode>
-        </friction>
-      </surface>
+  
     </collision>
   </link>
 
@@ -582,14 +512,7 @@
       <geometry>
         <box size="0.011 0.011 0.011"/>
       </geometry>
-  <surface>
-        <friction>
-          <ode>
-            <mu>100</mu>
-            <mu2>100</mu2>
-          </ode>
-        </friction>
-      </surface>
+  
     </collision>
   </link>
 
@@ -612,14 +535,7 @@
       <geometry>
         <box size="0.011 0.011 0.011"/>
       </geometry>
-  <surface>
-        <friction>
-          <ode>
-            <mu>100</mu>
-            <mu2>100</mu2>
-          </ode>
-        </friction>
-      </surface>
+  
     </collision>
   </link>
 
@@ -642,23 +558,16 @@
       <geometry>
         <box size="0.011 0.011 0.011"/>
       </geometry>
-  <surface>
-        <friction>
-          <ode>
-            <mu>100</mu>
-            <mu2>100</mu2>
-          </ode>
-        </friction>
-      </surface>
+  
     </collision>
   </link>
 
 
-  <joint name="lidar" type="fixed" dont_collapse="true">
+  <!-- <joint name="lidar" type="fixed" dont_collapse="true">
     <parent link="base_link"/>
     <child  link="lidar_link"/>
     <origin xyz="0.04312 0.00000 0.08341"/>
-  </joint>
+  </joint> -->
 
   <joint name="fl_ref" type="fixed" dont_collapse="true">
     <parent link="base_link"/>

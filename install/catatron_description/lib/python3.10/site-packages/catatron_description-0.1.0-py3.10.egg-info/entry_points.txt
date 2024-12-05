@@ -1,5 +1,6 @@
 [console_scripts]
 controller = catatron_description.controller:main
-inv_kin = catatron_description.inv_kin:main
+inv_kin_node = catatron_description.inv_kin_node:main
+joint_angles_check = catatron_description.joint_angles_check:main
 robot_launch = catatron_description.robot.launch:generate_launch_description
 

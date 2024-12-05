@@ -9,9 +9,14 @@ setup.py
 ../../build/catatron_description/catatron_description.egg-info/top_level.txt
 ../../build/catatron_description/catatron_description.egg-info/zip-safe
 catatron_description/__init__.py
+catatron_description/controller.py
+catatron_description/inv_kin_dual.py
+catatron_description/inv_kin_mono.py
+catatron_description/inv_kin_node.py
+catatron_description/joint_angles_check.py
+catatron_description/joint_angles_param.py
 config/joint_controller.yaml
 launch/robot.launch.py
 resource/catatron_description
-scripts/controller.py
-scripts/inv_kin.py
 urdf/catatron.urdf
+worlds/empty_world.world
