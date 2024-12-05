@@ -8,8 +8,10 @@ from launch.actions import RegisterEventHandler
 from launch.actions import ExecuteProcess
 from launch.event_handlers import OnProcessExit
 import os
+import json
 
 def generate_launch_description():
+    current_angles = [0.0]*12
     # Get share directories for the packages
     share_dir = get_package_share_directory('catatron_description')
     pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
@@ -65,7 +67,7 @@ def generate_launch_description():
     arguments=['-entity', 'catatron', '-file', urdf_file_path],
     # parameters=[{'use_sim_time': use_sim_time, 'timeout': 30}],  # Set timeout as a parameter
     parameters=[{'use_sim_time': use_sim_time}], 
-)
+    )
 
     joint_state_broadcaster = Node(
         package="controller_manager",
@@ -77,16 +79,41 @@ def generate_launch_description():
         executable="spawner",
         arguments=["joint_trajectory_controller","-c","/controller_manager"],
     )
+    joint_angles_check = Node(
+        package="catatron_description",
+        executable="joint_angles_check",
+        output="screen"
+    )
+    set_stand_pose  = Node(
+        package="catatron_description",
+        executable="inv_kin_node",
+        name="steering_action_client",
+        output= "screen",
+        arguments=[
+            'fr', '0.0','-0.03796', '-0.19996',
+            'bl','0.0','0.03796', '-0.19996',
+            str(current_angles)
 
+        ]
+    )
+
+
+    event_handler1  = RegisterEventHandler(
+        event_handler = OnProcessExit(
+            target_action = joint_state_broadcaster,
+            on_exit=[robot_controller_spawner],
+        )
+    )
+    event_handler2  = RegisterEventHandler(
+        event_handler = OnProcessExit(
+            target_action = robot_controller_spawner,
+            on_exit=[set_stand_pose],
+        )
+    )
 
     # Return LaunchDescription with specified order of execution
     return LaunchDescription([
-        RegisterEventHandler(
-            event_handler = OnProcessExit(
-                target_action = joint_state_broadcaster,
-                on_exit=[robot_controller_spawner],
-            )
-        ),
+        # SetEnvironmentVariable('current_angles', json.dumps(current_angles)),
         # Ensure that the robot state and joint state publisher are launched first
         robot_state_publisher_cmd,
         joint_state_publisher_cmd,
@@ -94,10 +121,15 @@ def generate_launch_description():
         # Then load the Gazebo world and spawn the robot
         gazebo_cmd,
         spawn_catatron,
-        joint_state_broadcaster
+        joint_state_broadcaster,
+        # joint_angles_param,
+        joint_angles_check,
+        # set_stand_pose
+        event_handler1,
+        event_handler2,
+
         
 
-        # Finally, start the ros2_control_node for the robot controllers
-        #ros2_control_node_cmd,
+        
     ])
 
