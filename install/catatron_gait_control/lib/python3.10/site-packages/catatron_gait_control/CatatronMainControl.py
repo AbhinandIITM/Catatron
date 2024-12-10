@@ -82,11 +82,11 @@ class CatatronMainControl(Node):
             self.get_logger().error("Failed to set joint angles.")
 
     def control_loop(self):
+        self.get_logger().info("control loop running")
         while rclpy.ok():
             try:
-                state = self.catatron_gait_control.run()
-                self.get_logger().info(f"state is {state}")
-                leg_positions= state.foot_locations
+                
+                leg_positions= self.catatron_gait_control.run()
                 self.catatron_gait_control.change_controller()
                 
                 dx = self.catatron_gait_control.state.body_local_position[0]

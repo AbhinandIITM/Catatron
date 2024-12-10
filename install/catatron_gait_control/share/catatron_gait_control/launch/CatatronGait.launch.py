@@ -75,6 +75,12 @@ def generate_launch_description():
         output="screen",
     )
 
+    gait_control = Node(
+        package="catatron_gait_control",
+        executable="gait_control",
+        output="screen",
+    )
+
     joystick_controller = Node(
         package="catatron_gait_control",
         executable="joystick_controller",
@@ -91,7 +97,7 @@ def generate_launch_description():
     event_handler_2 = RegisterEventHandler(
         event_handler=OnProcessStart(
             target_action=robot_controller_spawner,
-            on_start=[main_control,joystick_controller],
+            on_start=[gait_control,main_control,joystick_controller],
         )
     )
       

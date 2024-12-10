@@ -105,8 +105,8 @@ class CatatronTrot(GaitProperties):
     def run(self, state, command):
         state.foot_locations = self.step(state, command)
         state.robot_height = command.robot_height
-
-        return state
+        # print(state.foot_locations)
+        return state.foot_locations
 
 class TrotSwingController(object):
     def __init__(self, stance_ticks, swing_ticks, time_step, phase_length, z_leg_lift, default_stance):
