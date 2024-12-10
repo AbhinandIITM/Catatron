@@ -35,12 +35,9 @@
             </contact>
             <friction>
               <ode>
-                <mu>1</mu>
-                <mu2>1</mu2>
+                <mu>100</mu>
+                <mu2>100</mu2>
               </ode>
-              <torsional>
-                <ode/>
-              </torsional>
             </friction>
             <bounce/>
           </surface>

@@ -1,0 +1,25 @@
+[1.028s] Invoking command in '/home/abhinand/Envisage/catatron_ws/src/catatron_description': PYTHONPATH=/home/abhinand/Envisage/catatron_ws/build/catatron_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abhinand/Envisage/catatron_ws/install/catatron_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/catatron_description build --build-base /home/abhinand/Envisage/catatron_ws/build/catatron_description/build install --record /home/abhinand/Envisage/catatron_ws/build/catatron_description/install.log --single-version-externally-managed install_data
+[1.280s] running egg_info
+[1.280s] writing ../../build/catatron_description/catatron_description.egg-info/PKG-INFO
+[1.281s] writing dependency_links to ../../build/catatron_description/catatron_description.egg-info/dependency_links.txt
+[1.281s] writing entry points to ../../build/catatron_description/catatron_description.egg-info/entry_points.txt
+[1.281s] writing requirements to ../../build/catatron_description/catatron_description.egg-info/requires.txt
+[1.281s] writing top-level names to ../../build/catatron_description/catatron_description.egg-info/top_level.txt
+[1.283s] reading manifest file '../../build/catatron_description/catatron_description.egg-info/SOURCES.txt'
+[1.283s] writing manifest file '../../build/catatron_description/catatron_description.egg-info/SOURCES.txt'
+[1.284s] running build
+[1.284s] running build_py
+[1.284s] running install
+[1.284s] running install_lib
+[1.286s] running install_data
+[1.286s] running install_egg_info
+[1.288s] removing '/home/abhinand/Envisage/catatron_ws/install/catatron_description/lib/python3.10/site-packages/catatron_description-0.1.0-py3.10.egg-info' (and everything under it)
+[1.288s] Copying ../../build/catatron_description/catatron_description.egg-info to /home/abhinand/Envisage/catatron_ws/install/catatron_description/lib/python3.10/site-packages/catatron_description-0.1.0-py3.10.egg-info
+[1.289s] running install_scripts
+[1.306s] Installing controller script to /home/abhinand/Envisage/catatron_ws/install/catatron_description/lib/catatron_description
+[1.306s] Installing inv_kin_node script to /home/abhinand/Envisage/catatron_ws/install/catatron_description/lib/catatron_description
+[1.306s] Installing joint_angles_check script to /home/abhinand/Envisage/catatron_ws/install/catatron_description/lib/catatron_description
+[1.306s] Installing joint_angles_param script to /home/abhinand/Envisage/catatron_ws/install/catatron_description/lib/catatron_description
+[1.306s] Installing robot_launch script to /home/abhinand/Envisage/catatron_ws/install/catatron_description/lib/catatron_description
+[1.306s] writing list of installed files to '/home/abhinand/Envisage/catatron_ws/build/catatron_description/install.log'
+[1.338s] Invoked command in '/home/abhinand/Envisage/catatron_ws/src/catatron_description' returned '0': PYTHONPATH=/home/abhinand/Envisage/catatron_ws/build/catatron_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abhinand/Envisage/catatron_ws/install/catatron_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/catatron_description build --build-base /home/abhinand/Envisage/catatron_ws/build/catatron_description/build install --record /home/abhinand/Envisage/catatron_ws/build/catatron_description/install.log --single-version-externally-managed install_data

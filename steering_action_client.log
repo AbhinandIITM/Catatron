@@ -1,4 +1,1 @@
-2024-12-04 21:32:34,174 - INFO - Current Angles: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-2024-12-04 21:32:34,179 - INFO - Calculated joint angles for fr: [ 1.68118719e-09  9.36670477e-05 -1.87296626e-04]
-2024-12-04 21:32:34,179 - INFO - Calculated joint angles for bl: [-1.68118741e-09  9.36670477e-05 -1.87296626e-04]
-2024-12-04 21:32:34,180 - INFO - published  [1.6811871894617525e-09, 0.0, 9.366704766905292e-05, 0.0, 0.0, -1.6811874115063574e-09, 9.366704766905292e-05, -0.00018729662648951146, -0.00018729662648951146, 0.0, 0.0, 0.0]
+2024-12-08 20:41:33,019 - INFO - ['/home/abhinand/Envisage/catatron_ws/install/catatron_description/lib/catatron_description/inv_kin_node', 'fr', '0.02', '-0.05', '-0.162', 'bl', '0.02', '0.05', '-0.162', '--ros-args', '-r', '__node:=movement_sequence_16_inv_kin_node']
