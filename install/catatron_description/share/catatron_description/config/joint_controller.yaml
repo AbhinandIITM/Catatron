@@ -23,6 +23,7 @@ joint_trajectory_controller:
       - knee_fl
       - knee_bl
       - knee_br
+    allow_nonzero_velocity_at_trajectory_end: false
     interface_name: position
     command_interfaces:
       - position

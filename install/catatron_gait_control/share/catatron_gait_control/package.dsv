@@ -1,0 +1,6 @@
+source;share/catatron_gait_control/hook/pythonpath.ps1
+source;share/catatron_gait_control/hook/pythonpath.dsv
+source;share/catatron_gait_control/hook/pythonpath.sh
+source;share/catatron_gait_control/hook/ament_prefix_path.ps1
+source;share/catatron_gait_control/hook/ament_prefix_path.dsv
+source;share/catatron_gait_control/hook/ament_prefix_path.sh

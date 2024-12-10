@@ -2,5 +2,6 @@
 controller = catatron_description.controller:main
 inv_kin_node = catatron_description.inv_kin_node:main
 joint_angles_check = catatron_description.joint_angles_check:main
+joint_angles_param = catatron_description.joint_angles_param:main
 robot_launch = catatron_description.robot.launch:generate_launch_description
 

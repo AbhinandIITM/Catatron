@@ -11,11 +11,11 @@ setup.py
 catatron_description/__init__.py
 catatron_description/controller.py
 catatron_description/inv_kin_dual.py
-catatron_description/inv_kin_mono.py
 catatron_description/inv_kin_node.py
 catatron_description/joint_angles_check.py
 catatron_description/joint_angles_param.py
 config/joint_controller.yaml
+launch/pushup.launch.py
 launch/robot.launch.py
 resource/catatron_description
 urdf/catatron.urdf

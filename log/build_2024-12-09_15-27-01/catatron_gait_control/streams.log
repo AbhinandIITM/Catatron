@@ -1,0 +1,28 @@
+[0.980s] Invoking command in '/home/abhinand/Envisage/catatron_ws/src/catatron_gait_control': PYTHONPATH=/home/abhinand/Envisage/catatron_ws/build/catatron_gait_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abhinand/Envisage/catatron_ws/install/catatron_gait_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/catatron_gait_control build --build-base /home/abhinand/Envisage/catatron_ws/build/catatron_gait_control/build install --record /home/abhinand/Envisage/catatron_ws/build/catatron_gait_control/install.log --single-version-externally-managed install_data
+[1.235s] running egg_info
+[1.235s] writing ../../build/catatron_gait_control/catatron_gait_control.egg-info/PKG-INFO
+[1.235s] writing dependency_links to ../../build/catatron_gait_control/catatron_gait_control.egg-info/dependency_links.txt
+[1.235s] writing entry points to ../../build/catatron_gait_control/catatron_gait_control.egg-info/entry_points.txt
+[1.236s] writing requirements to ../../build/catatron_gait_control/catatron_gait_control.egg-info/requires.txt
+[1.236s] writing top-level names to ../../build/catatron_gait_control/catatron_gait_control.egg-info/top_level.txt
+[1.238s] reading manifest file '../../build/catatron_gait_control/catatron_gait_control.egg-info/SOURCES.txt'
+[1.239s] writing manifest file '../../build/catatron_gait_control/catatron_gait_control.egg-info/SOURCES.txt'
+[1.239s] running build
+[1.239s] running build_py
+[1.239s] copying catatron_gait_control/Joy.py -> /home/abhinand/Envisage/catatron_ws/build/catatron_gait_control/build/lib/catatron_gait_control
+[1.240s] running install
+[1.240s] running install_lib
+[1.241s] copying /home/abhinand/Envisage/catatron_ws/build/catatron_gait_control/build/lib/catatron_gait_control/ArgJoy.py -> /home/abhinand/Envisage/catatron_ws/install/catatron_gait_control/lib/python3.10/site-packages/catatron_gait_control
+[1.241s] copying /home/abhinand/Envisage/catatron_ws/build/catatron_gait_control/build/lib/catatron_gait_control/JoystickController.py -> /home/abhinand/Envisage/catatron_ws/install/catatron_gait_control/lib/python3.10/site-packages/catatron_gait_control
+[1.242s] byte-compiling /home/abhinand/Envisage/catatron_ws/install/catatron_gait_control/lib/python3.10/site-packages/catatron_gait_control/ArgJoy.py to ArgJoy.cpython-310.pyc
+[1.243s] byte-compiling /home/abhinand/Envisage/catatron_ws/install/catatron_gait_control/lib/python3.10/site-packages/catatron_gait_control/JoystickController.py to JoystickController.cpython-310.pyc
+[1.244s] running install_data
+[1.244s] running install_egg_info
+[1.246s] removing '/home/abhinand/Envisage/catatron_ws/install/catatron_gait_control/lib/python3.10/site-packages/catatron_gait_control-0.0.0-py3.10.egg-info' (and everything under it)
+[1.246s] Copying ../../build/catatron_gait_control/catatron_gait_control.egg-info to /home/abhinand/Envisage/catatron_ws/install/catatron_gait_control/lib/python3.10/site-packages/catatron_gait_control-0.0.0-py3.10.egg-info
+[1.247s] running install_scripts
+[1.265s] Installing joy script to /home/abhinand/Envisage/catatron_ws/install/catatron_gait_control/lib/catatron_gait_control
+[1.265s] Installing joystick_controller script to /home/abhinand/Envisage/catatron_ws/install/catatron_gait_control/lib/catatron_gait_control
+[1.265s] Installing main_control script to /home/abhinand/Envisage/catatron_ws/install/catatron_gait_control/lib/catatron_gait_control
+[1.266s] writing list of installed files to '/home/abhinand/Envisage/catatron_ws/build/catatron_gait_control/install.log'
+[1.303s] Invoked command in '/home/abhinand/Envisage/catatron_ws/src/catatron_gait_control' returned '0': PYTHONPATH=/home/abhinand/Envisage/catatron_ws/build/catatron_gait_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abhinand/Envisage/catatron_ws/install/catatron_gait_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/catatron_gait_control build --build-base /home/abhinand/Envisage/catatron_ws/build/catatron_gait_control/build install --record /home/abhinand/Envisage/catatron_ws/build/catatron_gait_control/install.log --single-version-externally-managed install_data
