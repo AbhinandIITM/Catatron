@@ -9,12 +9,14 @@ from .CatatronTrot import CatatronTrot
 from .CatatronRest import CatatronRest
 from .CatatronStand import CatatronStand
 from .CatatronCrawl import CatatronCrawl
+import rclpy
+from rclpy.node import Node
 
 
 
-
-class CatatronGaitControl():
+class CatatronGaitControl(Node):
     def __init__(self, body, legs, imu):
+        super().__init__("CatatronGaitControl")
         self.body = body
         self.legs = legs
 
@@ -49,6 +51,7 @@ class CatatronGaitControl():
                 self.currentController.pid_controller.reset()
                 self.state.ticks = 0
             self.command.trot_event = False
+            
 
         elif self.command.crawl_event:
             if self.state.behavior_state == BehaviorState.REST:
@@ -69,6 +72,10 @@ class CatatronGaitControl():
             self.currentController = self.Rest
             self.currentController.pid_controller.reset()
             self.command.rest_event = False
+            self.get_logger().info("at rest")
+        self.get_logger().info(f'change controller command {self.command}')
+        self.get_logger().info(f'change controller state {self.state}')
+
 
     def arg_command(self,msg):
         if msg.buttons[0]: # rest
@@ -96,6 +103,8 @@ class CatatronGaitControl():
             self.command.rest_event = False
         print(f"{self.state}")
         self.currentController.updateStateCommand(msg, self.state, self.command)
+        self.get_logger().info(f'arg command command {self.command}')
+        self.get_logger().info(f'arg command state {self.state}')
         
     
 
@@ -110,7 +119,6 @@ class CatatronGaitControl():
 
     @property
     def default_stance(self):
-        # FR, FL, RR, RL
         return np.array([[self.delta_x + self.x_shift_front,self.delta_x + self.x_shift_front,-self.delta_x + self.x_shift_back,-self.delta_x + self.x_shift_back],
                          [-self.delta_y                    ,self.delta_y                     ,-self.delta_y                    , self.delta_y                    ],
                          [0                                ,0                                ,0                                ,0                                ]])

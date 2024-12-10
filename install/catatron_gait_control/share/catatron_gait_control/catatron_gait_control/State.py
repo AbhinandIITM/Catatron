@@ -9,7 +9,7 @@ class BehaviorState(Enum):
     CRAWL = 2
     STAND = 3
 
-class State(object):
+class State():
     def __init__(self,default_height):
         self.velocity = np.array([0., 0.])
         self.yaw_rate = 0.
@@ -32,6 +32,13 @@ class State(object):
 
         #from CatatronGaitControl
         self.behavior_state = BehaviorState.REST
+    def __str__(self):
+        return (f"height ={self.robot_height}, "
+                f"foot_locations={self.foot_locations}, "
+                f"imu_roll={self.imu_roll}, imu_pitch={self.imu_pitch}, "
+                f"behavior_state={self.behavior_state}, ticks={self.ticks}),"
+                f"velocity {self.velocity}"
+                f"position {self.body_local_position}, local orientation {self.body_local_orientation}")
 
 class Command(object):
     def __init__(self,default_height):
@@ -46,3 +53,8 @@ class Command(object):
         self.crawl_event = False
         self.rest_event = False
         self.stand_event = False
+    def __str__(self):
+        return (f"height ={self.robot_height}, "
+                f"velocity {self.velocity}"
+                f"trot event {self.trot_event} crawl event {self.crawl_event} rest_event {self.rest_event} stand_Event {self.stand_event}"
+                f"yaw rate {self.yaw_rate} ")

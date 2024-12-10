@@ -27,6 +27,7 @@ setup(
             'main_control = catatron_gait_control.CatatronMainControl:main',
             'joy = catatron_gait_control.Joy:main',
             'joystick_controller = catatron_gait_control.JoystickController:main', 
+            'gait_control = catatron_gait_control.CatatronGaitControl:main',
 
 
         ],
