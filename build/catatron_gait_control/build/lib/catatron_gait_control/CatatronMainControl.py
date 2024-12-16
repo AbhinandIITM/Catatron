@@ -80,7 +80,7 @@ class CatatronMainControl(Node):
             self.get_logger().info(f"Updated joint angles to: {angles}")
         else:
             self.get_logger().error("Failed to set joint angles.")
-
+    #ISSUE control loop function not being called continuously.
     def control_loop(self):
         self.get_logger().info("control loop running")
         while rclpy.ok():
