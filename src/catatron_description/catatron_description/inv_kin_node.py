@@ -135,7 +135,7 @@ class SteeringActionClient(Node):
         return True, angles
 
     def getLegDimensions(self):
-        urdf_model = r'/home/abhinand/Envisage/catatron_ws/src/catatron_description/urdf/catatron.urdf'
+        urdf_model = r'/home/ajoymathew07/Catatron/Catatron//src/catatron_description/urdf/catatron.urdf'
 
         urdf_str = open(urdf_model, 'r').read()
         robot_urdf = URDF.from_xml_string(urdf_str)

@@ -97,11 +97,9 @@ def generate_launch_description():
     event_handler_2 = RegisterEventHandler(
         event_handler=OnProcessStart(
             target_action=robot_controller_spawner,
-            on_start=[gait_control,main_control,joystick_controller],
+            on_start=[main_control,joystick_controller],
         )
     )
-      
-  
 
     return LaunchDescription([
         robot_state_publisher_cmd,
@@ -111,5 +109,6 @@ def generate_launch_description():
         joint_angles_param,
         joint_state_broadcaster,
         event_handler_1,
-        event_handler_2
+        event_handler_2,
+        # main_control
     ])

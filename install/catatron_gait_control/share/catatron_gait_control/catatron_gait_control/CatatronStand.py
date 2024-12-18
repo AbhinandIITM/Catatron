@@ -12,6 +12,7 @@ class CatatronStand():
         self.FR_Y = 0.
         self.FL_X = 0.
         self.FL_Y = 0.
+        print("Catatron Stand has been initialized")
 
     def updateStateCommand(self,msg,state):
         state.body_local_position[0] = msg.axes[7] * 0.14

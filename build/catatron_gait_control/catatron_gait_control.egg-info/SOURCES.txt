@@ -22,6 +22,7 @@ catatron_gait_control/PID.py
 catatron_gait_control/State.py
 catatron_gait_control/Transformations.py
 catatron_gait_control/__init__.py
+catatron_gait_control/tempCodeRunnerFile.py
 launch/CatatronGait.launch.py
 resource/catatron_gait_control
 test/test_copyright.py

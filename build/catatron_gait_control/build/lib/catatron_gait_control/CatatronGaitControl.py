@@ -43,6 +43,9 @@ class CatatronGaitControl(Node):
         self.command = Command(self.default_height)
 
     def change_controller(self):
+        print(self.command.trot_event)
+        print(self.command.stand_event)
+        print(self.command.crawl_event)
         
         if self.command.trot_event:
             if self.state.behavior_state == BehaviorState.REST:

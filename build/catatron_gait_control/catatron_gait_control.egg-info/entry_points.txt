@@ -1,6 +1,4 @@
 [console_scripts]
-gait_control = catatron_gait_control.CatatronGaitControl:main
-joy = catatron_gait_control.Joy:main
+joy = catatron_gait_control.ArgJoy:main
 joystick_controller = catatron_gait_control.JoystickController:main
 main_control = catatron_gait_control.CatatronMainControl:main
-

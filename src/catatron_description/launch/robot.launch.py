@@ -14,12 +14,11 @@ def generate_launch_description():
 
     # Launch configurations (arguments you can change from the command line)
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
-    world = LaunchConfiguration('world',default='/home/abhinand/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/worlds/empty_world.world')
+    world = LaunchConfiguration('world',default='/home/ajoymathew07/Catatron/Catatron/src/catatron_description/worlds/empty_world.world')
     # default=os.path.join(share_dir,'worlds','empty_world.world')
     urdf_file_path = os.path.join(share_dir, 'urdf', 'catatron.urdf')
     with open(urdf_file_path, 'r') as urdf_file:
         robot_description_content = urdf_file.read()
-
     # Parameters for robot_state_publisher
     params = {'robot_description': robot_description_content}
 

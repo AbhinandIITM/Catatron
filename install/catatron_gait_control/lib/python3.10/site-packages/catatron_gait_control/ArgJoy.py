@@ -20,6 +20,7 @@ class ArgJoy(Node):
     def publish_joy(self):
         self.publisher.publish(self.joy_msg)
         self.get_logger().info(f"Published Joy Message: Axes={self.joy_msg.axes}, Buttons={self.joy_msg.buttons}")
+        print("ArgJoy published successfully")
 
 
 def main(args=None):

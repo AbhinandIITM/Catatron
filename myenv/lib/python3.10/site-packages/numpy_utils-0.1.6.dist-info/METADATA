@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: numpy-utils
+Version: 0.1.6
+Summary: NumPy utilities.
+Home-page: https://github.com/deluccial/numpy_utils.git
+Author: Luke DeLuccia
+Author-email: deluccial@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+[![](https://img.shields.io/pypi/v/numpy_utils.svg?style=flat-square)](https://pypi.org/project/numpy_utils)
+[![](https://img.shields.io/pypi/pyversions/numpy_utils.svg?style=flat-square&logo=python)](https://pypi.org/project/numpy_utils)
+[![](https://img.shields.io/pypi/l/numpy_utils.svg?style=flat-square)](https://pypi.org/project/numpy_utils)
+[![](https://img.shields.io/pypi/wheel/numpy_utils.svg?style=flat-square)](https://pypi.org/project/numpy_utils)
+[![](https://img.shields.io/github/last-commit/deluccial/numpy_utils.svg?style=flat-square)](https://github.com/deluccial/numpy_utils/commits)
+[![](https://img.shields.io/github/languages/code-size/deluccial/numpy_utils.svg?style=flat-square)](https://github.com/deluccial/numpy_utils)
+
+Provides general NumPy utilities for the modern-day programmer.
+
+`pip install numpy_utils`
+
+

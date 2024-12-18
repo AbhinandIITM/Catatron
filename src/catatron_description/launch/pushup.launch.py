@@ -8,22 +8,18 @@ from launch.event_handlers import OnProcessExit, OnProcessStart
 import os
 
 def generate_launch_description():
-    # Get share directories for the packages
     share_dir = get_package_share_directory('catatron_description')
     pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
 
     # Launch configurations (arguments you can change from the command line)
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
-    world = LaunchConfiguration('world',default=os.path.join(share_dir,'worlds','empty_world.world'))
+    world = LaunchConfiguration('world',default='/home/ajoymathew07/Catatron/Catatron/src/catatron_description/worlds/empty_world.world')
     # default=os.path.join(share_dir,'worlds','empty_world.world')
-    #default='/home/abhinand/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/worlds/empty_world.world'
     urdf_file_path = os.path.join(share_dir, 'urdf', 'catatron.urdf')
     with open(urdf_file_path, 'r') as urdf_file:
         robot_description_content = urdf_file.read()
-
     # Parameters for robot_state_publisher
     params = {'robot_description': robot_description_content}
-
     # Nodes
     robot_state_publisher_cmd = Node(
         package='robot_state_publisher',
@@ -131,30 +127,36 @@ def generate_launch_description():
     n = 10
     for i in range(n):
         push_up_nodes.append(Node(
-        package="catatron_description",
-        executable="inv_kin_node",
-        name="steering_action_client",
-        output="screen",
-        arguments=[push_up_1[i]["args"]]))
+            package="catatron_description",
+            executable="inv_kin_node",
+            name=f"steering_action_client_{i}",
+            output="screen",
+            arguments=push_up_1[i]["args"]))
 
         push_up_nodes.append(Node(
-        package="catatron_description",
-        executable="inv_kin_node",
-        name="steering_action_client",
-        output="screen",
-        arguments=[push_up_2[i]["args"]]
-        ))
+            package="catatron_description",
+            executable="inv_kin_node",
+            name=f"steering_action_client_{i + n}",
+            output="screen",
+            arguments=push_up_2[i]["args"]))
+
+    # Avoid index out-of-bounds for event_handlers
     event_handlers = []
-    for i in range(n):
+    for i in range(len(push_up_nodes) - 2):  # Adjusted to avoid bounds error
         event_handlers.append(
-            event_handler=OnProcessExit(
-                target_action=push_up_nodes[i],
-                on_exit=[push_up_nodes[i + 2]]
+            RegisterEventHandler(
+                event_handler=OnProcessExit(
+                    target_action=push_up_nodes[i],
+                    on_exit=[push_up_nodes[i + 2]]
+                )
             )
         )
-
-
-
+    event_handler_2_corrected = RegisterEventHandler(
+    event_handler=OnProcessStart(
+        target_action=set_stand_pose_2,
+        on_start=[push_up_nodes[0], push_up_nodes[1]],  # Now valid, push_up_nodes is defined
+    )
+)
     return LaunchDescription([
         robot_state_publisher_cmd,
         joint_state_publisher_cmd,
@@ -164,8 +166,7 @@ def generate_launch_description():
         robot_controller_spawner,
         event_handler_1,
         event_handler_2,
-        push_up_nodes[0],
-        push_up_nodes[20],
+        *push_up_nodes,
         *event_handlers
         
     ])

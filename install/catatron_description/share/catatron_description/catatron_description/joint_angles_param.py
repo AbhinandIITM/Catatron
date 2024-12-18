@@ -30,10 +30,10 @@ def main(args=None):
     joint_angles_param_node = JointAnglesParamNode()
     
     # Test updating joint angles (change values as needed)
-    # joint_angles_param_node.set_joint_angles([0.1, 0.2, -0.3, 0.4, 0.5, -0.6, 0.7, -0.8, 0.9, -1.0, 1.1, -1.2])
+    joint_angles_param_node.set_joint_angles([0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0])
     
     # Test getting the current joint angles
-    # joint_angles_param_node.get_joint_angles()
+    joint_angles_param_node.get_joint_angles()
 
     # Spin the node to keep it active
     rclpy.spin(joint_angles_param_node)

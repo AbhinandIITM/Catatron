@@ -16,6 +16,7 @@ class CatatronRest():
         self.use_imu = False
         self.use_button = True
         self.pid_controller.reset()
+        print("Catatron Rest has been initialized")
         
     def updateStateCommand(self, msg, state, command):
         # local body position

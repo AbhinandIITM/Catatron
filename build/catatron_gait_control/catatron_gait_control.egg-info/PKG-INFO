@@ -1,12 +1,8 @@
 Metadata-Version: 2.1
-Name: catatron-gait-control
+Name: catatron_gait_control
 Version: 0.0.0
 Summary: TODO: Package description
-Home-page: UNKNOWN
 Maintainer: abhinand
 Maintainer-email: me23b208@smail.iitm.ac.in
 License: TODO: License declaration
-Platform: UNKNOWN
-
-UNKNOWN
-
+Requires-Dist: setuptools

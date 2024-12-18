@@ -1,0 +1,22 @@
+[0.948s] Invoking command in '/home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control': PYTHONPATH=/home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ajoymathew07/Catatron/Catatron/install/catatron_gait_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/build --no-deps symlink_data --force
+[1.143s] running develop
+[1.266s] running egg_info
+[1.267s] writing catatron_gait_control.egg-info/PKG-INFO
+[1.267s] writing dependency_links to catatron_gait_control.egg-info/dependency_links.txt
+[1.267s] writing entry points to catatron_gait_control.egg-info/entry_points.txt
+[1.267s] writing requirements to catatron_gait_control.egg-info/requires.txt
+[1.267s] writing top-level names to catatron_gait_control.egg-info/top_level.txt
+[1.269s] reading manifest file 'catatron_gait_control.egg-info/SOURCES.txt'
+[1.270s] writing manifest file 'catatron_gait_control.egg-info/SOURCES.txt'
+[1.309s] running build_ext
+[1.309s] Creating /home/ajoymathew07/Catatron/Catatron/install/catatron_gait_control/lib/python3.10/site-packages/catatron-gait-control.egg-link (link to .)
+[1.309s] Installing joy script to /home/ajoymathew07/Catatron/Catatron/install/catatron_gait_control/lib/catatron_gait_control
+[1.310s] Installing joystick_controller script to /home/ajoymathew07/Catatron/Catatron/install/catatron_gait_control/lib/catatron_gait_control
+[1.310s] Installing main_control script to /home/ajoymathew07/Catatron/Catatron/install/catatron_gait_control/lib/catatron_gait_control
+[1.310s] 
+[1.310s] Installed /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control
+[1.310s] running symlink_data
+[1.310s] symbolically linking /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/resource/catatron_gait_control -> /home/ajoymathew07/Catatron/Catatron/install/catatron_gait_control/share/ament_index/resource_index/packages
+[1.310s] symbolically linking /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/package.xml -> /home/ajoymathew07/Catatron/Catatron/install/catatron_gait_control/share/catatron_gait_control
+[1.311s] symbolically linking /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/launch/CatatronGait.launch.py -> /home/ajoymathew07/Catatron/Catatron/install/catatron_gait_control/share/catatron_gait_control/launch
+[1.351s] Invoked command in '/home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control' returned '0': PYTHONPATH=/home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ajoymathew07/Catatron/Catatron/install/catatron_gait_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/build --no-deps symlink_data --force

@@ -13,6 +13,7 @@ class CatatronTrot(GaitProperties):
         self.use_button = True
         self.autoRest = True
         self.trotNeeded = True  
+        print("Catatron Trot has been initialized")
 
         contact_phases = np.array([[1, 1, 1, 0],  # 0: Leg swing
                                    [1, 0, 1, 1],  # 1: Moving stance forward

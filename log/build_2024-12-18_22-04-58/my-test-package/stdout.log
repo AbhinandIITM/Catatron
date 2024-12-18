@@ -1,0 +1,5 @@
+running egg_info
+writing ../../../../../../../../build/my-test-package/my_test_package.egg-info/PKG-INFO
+writing dependency_links to ../../../../../../../../build/my-test-package/my_test_package.egg-info/dependency_links.txt
+writing top-level names to ../../../../../../../../build/my-test-package/my_test_package.egg-info/top_level.txt
+reading manifest file '../../../../../../../../build/my-test-package/my_test_package.egg-info/SOURCES.txt'

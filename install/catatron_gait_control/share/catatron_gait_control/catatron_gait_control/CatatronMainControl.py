@@ -7,7 +7,7 @@ from std_msgs.msg import Float64
 from rclpy.executors import MultiThreadedExecutor
 from rclpy.callback_groups import ReentrantCallbackGroup,MutuallyExclusiveCallbackGroup
 from catatron_gait_control.CatatronGaitControl import CatatronGaitControl
-from catatron_gait_control.IK import InverseKinematics
+from .IK import InverseKinematics
 from control_msgs.action import FollowJointTrajectory
 from trajectory_msgs.msg import JointTrajectoryPoint
 from rclpy.duration import Duration
@@ -16,7 +16,7 @@ from rcl_interfaces.srv import GetParameters
 from rcl_interfaces.srv import SetParameters
 from rcl_interfaces.msg import Parameter, ParameterType
 import threading
-
+import time
 USE_IMU = True
 RATE = 60  # Hertz
 
@@ -30,6 +30,7 @@ class CatatronMainControl(Node):
         self.callback_group4 = MutuallyExclusiveCallbackGroup()
         self.callback_group5 = MutuallyExclusiveCallbackGroup()
         self.callback_group6 = MutuallyExclusiveCallbackGroup()
+        self.counter=0
 
         body = [0.1908, 0.080]
         legs = [0.0, 0.04, 0.100, 0.094333]
@@ -51,6 +52,7 @@ class CatatronMainControl(Node):
     def get_joint_angles(self):
         request = GetParameters.Request()
         request.names = ['joint_angles'] 
+        # print(request.names)
         
         # Wait for the response
         future = self.client.call_async(request)
@@ -59,7 +61,7 @@ class CatatronMainControl(Node):
         if future.result() is not None:
             response = future.result()
             angles = response.values[0].double_array_value  
-            # self.get_logger().info(f"{angles} received.")
+            self.get_logger().info(f"{angles} received.")
             return angles
             
         else:
@@ -78,38 +80,39 @@ class CatatronMainControl(Node):
 
         if future.result() is not None:
             self.get_logger().info(f"Updated joint angles to: {angles}")
+           
         else:
             self.get_logger().error("Failed to set joint angles.")
+        
     #ISSUE control loop function not being called continuously.
     def control_loop(self):
-        self.get_logger().info("control loop running")
-        while rclpy.ok():
-            try:
-                
-                leg_positions= self.catatron_gait_control.run()
-                self.catatron_gait_control.change_controller()
-                
-                dx = self.catatron_gait_control.state.body_local_position[0]
-                dy = self.catatron_gait_control.state.body_local_position[1]
-                dz = self.catatron_gait_control.state.body_local_position[2]
-
-                roll = self.catatron_gait_control.state.body_local_orientation[0]
-                pitch = self.catatron_gait_control.state.body_local_orientation[1]
-                yaw = self.catatron_gait_control.state.body_local_orientation[2]
-                joint_angles = self.inverseKinematics.inverse_kinematics(leg_positions=leg_positions,dx=dx, dy=dy, dz=dz, roll=roll, pitch=pitch, yaw=yaw)
-
-                # self.get_logger().info(f"goal angles {joint_angles}")
-                self.send_goal(joint_angles)
-               
+        self.get_logger().info("Control loop running")
             
-            except Exception as e:
-                self.get_logger().error(f"Error in control loop: {e}")
-                
-            rclpy.spin(self)  # Ensure that we handle the events and callbacks
+        # Get leg positions and possibly switch controller
+        leg_positions = self.catatron_gait_control.run()
+        self.catatron_gait_control.change_controller()  # Confirm if this should run on every iteration
+
+        # Extract body position and orientation
+        dx = self.catatron_gait_control.state.body_local_position[0]
+        dy = self.catatron_gait_control.state.body_local_position[1]
+        dz = self.catatron_gait_control.state.body_local_position[2]
+
+        roll = self.catatron_gait_control.state.body_local_orientation[0]
+        pitch = self.catatron_gait_control.state.body_local_orientation[1]
+        yaw = self.catatron_gait_control.state.body_local_orientation[2]
+
+        # Perform inverse kinematics calculation
+        joint_angles = self.inverseKinematics.inverse_kinematics(
+            leg_positions=leg_positions, dx=dx, dy=dy, dz=dz, roll=roll, pitch=pitch, yaw=yaw
+        )
+
+        # Send calculated joint angles
+        self.send_goal(joint_angles)
 
     def send_goal(self, angles):
         goal_msg = FollowJointTrajectory.Goal()
-        # print(angles)
+        # print(angles) 
+        #change order of joint_names
         joint_names = [
             "hip1_fr", "hip1_fl", "hip2_fr", "hip2_fl",
             "hip2_br", "hip1_bl", "hip2_bl", "knee_bl",
@@ -120,7 +123,7 @@ class CatatronMainControl(Node):
         point1 = JointTrajectoryPoint()
         point1.positions = self.get_joint_angles()
         points.append(point1)
-
+        self.get_logger().info(f"Trajectory points: {points}")
         point2 = JointTrajectoryPoint()
         point2.time_from_start = Duration(seconds=3, nanoseconds=0).to_msg()
         point2.positions = angles 
@@ -149,7 +152,6 @@ class CatatronMainControl(Node):
     def get_result_callback(self, future):
         result = future.result().result
         self.get_logger().info('Result: ' + str(result))
-        # rclpy.shutdown()
 
     def feedback_callback(self, feedback_msg):
         feedback = feedback_msg.feedback

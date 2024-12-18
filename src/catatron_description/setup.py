@@ -25,7 +25,7 @@ setup(
     maintainer_email='your_email@example.com',
     description='Catatron description and control in ROS 2 with Gazebo',
     license='Apache-2.0',
-    tests_require=['pytest'],
+    #tests_require=['pytest'],
     entry_points={
     'console_scripts': [
         'robot_launch = catatron_description.robot.launch:generate_launch_description',

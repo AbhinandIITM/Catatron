@@ -18,7 +18,6 @@ class JoystickController(Node):
         self.target_joy = Joy()
         self.target_joy.axes = [0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0]
         self.target_joy.buttons = [0] * 11
-
         self.last_joy = Joy()
         #index 2 and 5 not being used.
         self.last_joy.axes = [0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0]

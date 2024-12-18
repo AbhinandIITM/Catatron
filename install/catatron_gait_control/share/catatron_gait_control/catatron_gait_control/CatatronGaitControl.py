@@ -14,7 +14,7 @@ from rclpy.node import Node
 
 
 
-class CatatronGaitControl(Node):
+class CatatronGaitControl():
     def __init__(self, body, legs, imu):
         super().__init__("CatatronGaitControl")
         self.body = body
@@ -122,3 +122,4 @@ class CatatronGaitControl(Node):
         return np.array([[self.delta_x + self.x_shift_front,self.delta_x + self.x_shift_front,-self.delta_x + self.x_shift_back,-self.delta_x + self.x_shift_back],
                          [-self.delta_y                    ,self.delta_y                     ,-self.delta_y                    , self.delta_y                    ],
                          [0                                ,0                                ,0                                ,0                                ]])
+    
