@@ -22,11 +22,9 @@ class JoystickController(Node):
         #index 2 and 5 not being used.
         self.last_joy.axes = [0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0]
         self.last_joy.buttons = [0] * 11
-
         self.last_send_time = self.get_clock().now()
 
         self.use_button = True
-
         self.speed_index = 2
         self.available_speeds = [0.5, 1.0, 3.0, 4.0]
 
@@ -51,6 +49,7 @@ class JoystickController(Node):
 
         self.target_joy.axes = msg.axes
         self.target_joy.buttons = msg.buttons
+        print(self.target_joy.buttons)
 
     def ramped_vel(self, v_prev, v_target, t_prev, t_now):
         step = (t_now - t_prev).nanoseconds / 1e9  # Convert nanoseconds to seconds
@@ -101,7 +100,8 @@ class JoystickController(Node):
             self.publisher.publish(self.last_joy)
             # self.get_logger().info(f"{self.last_joy}")
             # Log more details for debugging
-            # self.get_logger().info("Joystick state changed, publishing joy.")
+            # print("Joystick Controller published")
+            self.get_logger().info("Joystick state changed, publishing joy.")
             
 
         self.last_send_time = t_now

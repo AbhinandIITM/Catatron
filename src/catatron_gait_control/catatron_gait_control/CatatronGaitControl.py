@@ -43,72 +43,81 @@ class CatatronGaitControl(Node):
         self.command = Command(self.default_height)
 
     def change_controller(self):
-        print(self.command.trot_event)
+        # self.get_logger().info(self.command.stand_event,self.command.crawl_event)
         print(self.command.stand_event)
+        print(self.command.trot_event)
         print(self.command.crawl_event)
-        
+
         if self.command.trot_event:
-            if self.state.behavior_state == BehaviorState.REST:
-                self.state.behavior_state = BehaviorState.TROT
-                self.currentController = self.trotGaitController
-                self.currentController.pid_controller.reset()
-                self.state.ticks = 0
-            self.command.trot_event = False
+            
+            self.state.behavior_state = BehaviorState.TROT
+            self.currentController = self.trotGaitController
+            self.currentController.pid_controller.reset()
+            self.state.ticks = 0
+            # self.command.trot_event = False
             
 
         elif self.command.crawl_event:
-            if self.state.behavior_state == BehaviorState.REST:
-                self.state.behavior_state = BehaviorState.CRAWL
-                self.currentController = self.crawlGaitController
-                self.currentController.first_cycle = True
-                self.state.ticks = 0
-            self.command.crawl_event = False
+           
+            self.state.behavior_state = BehaviorState.CRAWL
+            self.currentController = self.crawlGaitController
+            self.currentController.first_cycle = True
+            self.state.ticks = 0
+            # self.command.crawl_event = False
 
         elif self.command.stand_event:
-            if self.state.behavior_state == BehaviorState.REST:
-                self.state.behavior_state = BehaviorState.STAND
-                self.currentController = self.standController
-            self.command.stand_event = False
+            # if self.state.behavior_state == BehaviorState.REST:
+            self.state.behavior_state = BehaviorState.STAND
+            self.currentController = self.standController
+            # self.command.stand_event = False
 
         elif self.command.rest_event:
             self.state.behavior_state = BehaviorState.REST
             self.currentController = self.Rest
             self.currentController.pid_controller.reset()
-            self.command.rest_event = False
+            # self.command.rest_event = False
             self.get_logger().info("at rest")
         self.get_logger().info(f'change controller command {self.command}')
         self.get_logger().info(f'change controller state {self.state}')
 
 
-    def arg_command(self,msg):
-        if msg.buttons[0]: # rest
+    def arg_command(self, msg):
+        print("arg_command callback triggered.")  # Debugging statement
+        self.get_logger().info("arg_command callback triggered.")  # ROS 2 Logger
+
+        # Process the message as usual
+        if msg.buttons[0]:  # Rest
             self.command.trot_event = False
             self.command.crawl_event = False
             self.command.stand_event = False
             self.command.rest_event = True
-            
-        elif msg.buttons[1]: # trot
+            print("Rest initiated")
+
+        elif msg.buttons[1]:  # Trot
             self.command.trot_event = True
             self.command.crawl_event = False
             self.command.stand_event = False
             self.command.rest_event = False
+            print("Trot initiated")
 
-        elif msg.buttons[2]: # crawl
+        elif msg.buttons[2]:  # Crawl
             self.command.trot_event = False
             self.command.crawl_event = True
             self.command.stand_event = False
             self.command.rest_event = False
-       
-        elif msg.buttons[3]: # stand
+            print("Crawl initiated")
+
+        elif msg.buttons[3]:  # Stand
             self.command.trot_event = False
             self.command.crawl_event = False
             self.command.stand_event = True
             self.command.rest_event = False
-        print(f"{self.state}")
+            print("Stand initiated")
+
         self.currentController.updateStateCommand(msg, self.state, self.command)
-        self.get_logger().info(f'arg command command {self.command}')
-        self.get_logger().info(f'arg command state {self.state}')
-        
+        self.get_logger().info(f"arg_command processed command: {self.command}")
+        self.get_logger().info(f"arg_command processed state: {self.state}")
+
     
 
     def imu_orientation(self,msg):

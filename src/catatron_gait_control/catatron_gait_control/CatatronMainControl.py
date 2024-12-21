@@ -91,6 +91,7 @@ class CatatronMainControl(Node):
         # Get leg positions and possibly switch controller
         leg_positions = self.catatron_gait_control.run()
         self.catatron_gait_control.change_controller()  # Confirm if this should run on every iteration
+        self.get_logger().info("Change controller running")
 
         # Extract body position and orientation
         dx = self.catatron_gait_control.state.body_local_position[0]
@@ -114,8 +115,8 @@ class CatatronMainControl(Node):
         # print(angles) 
         #change order of joint_names
         joint_names = [
-            "hip1_fr", "hip1_fl", "hip2_fr", "hip2_fl",
-            "hip2_br", "hip1_bl", "hip2_bl", "knee_bl",
+            "hip1_fr", "hip2_fl", "hip2_fr", "hip1_fl",
+            "hip2_br", "hip2_bl", "hip1_bl", "knee_bl",
             "knee_fr", "hip1_br", "knee_fl", "knee_br"
         ]     
         points = []
@@ -144,7 +145,7 @@ class CatatronMainControl(Node):
             self.get_logger().info('Goal rejected :(')
             return
 
-        self.get_logger().info('Goal accepted :)')
+        self.get_logger().info('Goal accepted :) in CatatronMainControl')
         
         self._get_result_future = goal_handle.get_result_async()
         self._get_result_future.add_done_callback(self.get_result_callback)

@@ -75,11 +75,11 @@ def generate_launch_description():
         output="screen",
     )
 
-    gait_control = Node(
-        package="catatron_gait_control",
-        executable="gait_control",
-        output="screen",
-    )
+    # gait_control = Node(
+    #     package="catatron_gait_control",
+    #     executable="gait_control",
+    #     output="screen",
+    # )
 
     joystick_controller = Node(
         package="catatron_gait_control",

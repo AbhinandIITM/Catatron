@@ -1,0 +1,43 @@
+[0.752s] Invoking command in '/home/ajoymathew07/Catatron/Catatron/src/catatron_gait_control': PYTHONPATH=/home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ajoymathew07/Catatron/Catatron/install/catatron_gait_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/catatron_gait_control build --build-base /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/build install --record /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/install.log --single-version-externally-managed install_data
+[0.934s] running egg_info
+[0.946s] writing ../../build/catatron_gait_control/catatron_gait_control.egg-info/PKG-INFO
+[0.946s] writing dependency_links to ../../build/catatron_gait_control/catatron_gait_control.egg-info/dependency_links.txt
+[0.946s] writing entry points to ../../build/catatron_gait_control/catatron_gait_control.egg-info/entry_points.txt
+[0.946s] writing requirements to ../../build/catatron_gait_control/catatron_gait_control.egg-info/requires.txt
+[0.946s] writing top-level names to ../../build/catatron_gait_control/catatron_gait_control.egg-info/top_level.txt
+[0.972s] reading manifest file '../../build/catatron_gait_control/catatron_gait_control.egg-info/SOURCES.txt'
+[0.973s] writing manifest file '../../build/catatron_gait_control/catatron_gait_control.egg-info/SOURCES.txt'
+[0.973s] running build
+[0.973s] running build_py
+[0.974s] copying catatron_gait_control/IK.py -> /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/build/lib/catatron_gait_control
+[0.974s] copying catatron_gait_control/CatatronCrawl.py -> /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/build/lib/catatron_gait_control
+[0.974s] copying catatron_gait_control/CatatronRest.py -> /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/build/lib/catatron_gait_control
+[0.974s] copying catatron_gait_control/CatatronStand.py -> /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/build/lib/catatron_gait_control
+[0.974s] copying catatron_gait_control/__init__.py -> /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/build/lib/catatron_gait_control
+[0.974s] copying catatron_gait_control/PID.py -> /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/build/lib/catatron_gait_control
+[0.975s] copying catatron_gait_control/tempCodeRunnerFile.py -> /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/build/lib/catatron_gait_control
+[0.975s] copying catatron_gait_control/State.py -> /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/build/lib/catatron_gait_control
+[0.975s] copying catatron_gait_control/Transformations.py -> /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/build/lib/catatron_gait_control
+[0.975s] copying catatron_gait_control/ArgJoy.py -> /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/build/lib/catatron_gait_control
+[0.975s] copying catatron_gait_control/GaitProperties.py -> /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/build/lib/catatron_gait_control
+[0.975s] copying catatron_gait_control/CatatronGaitControl.py -> /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/build/lib/catatron_gait_control
+[0.976s] copying catatron_gait_control/CatatronTrot.py -> /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/build/lib/catatron_gait_control
+[0.976s] copying catatron_gait_control/CatatronMainControl.py -> /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/build/lib/catatron_gait_control
+[0.976s] copying catatron_gait_control/JoystickController.py -> /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/build/lib/catatron_gait_control
+[0.976s] running install
+[0.980s] running install_lib
+[0.993s] copying /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/build/lib/catatron_gait_control/CatatronGaitControl.py -> /home/ajoymathew07/Catatron/Catatron/install/catatron_gait_control/lib/python3.10/site-packages/catatron_gait_control
+[0.993s] byte-compiling /home/ajoymathew07/Catatron/Catatron/install/catatron_gait_control/lib/python3.10/site-packages/catatron_gait_control/CatatronGaitControl.py to CatatronGaitControl.cpython-310.pyc
+[0.994s] running install_data
+[0.994s] copying resource/catatron_gait_control -> /home/ajoymathew07/Catatron/Catatron/install/catatron_gait_control/share/ament_index/resource_index/packages
+[0.994s] copying package.xml -> /home/ajoymathew07/Catatron/Catatron/install/catatron_gait_control/share/catatron_gait_control
+[0.995s] copying launch/CatatronGait.launch.py -> /home/ajoymathew07/Catatron/Catatron/install/catatron_gait_control/share/catatron_gait_control/launch
+[0.995s] running install_egg_info
+[1.008s] removing '/home/ajoymathew07/Catatron/Catatron/install/catatron_gait_control/lib/python3.10/site-packages/catatron_gait_control-0.0.0-py3.10.egg-info' (and everything under it)
+[1.008s] Copying ../../build/catatron_gait_control/catatron_gait_control.egg-info to /home/ajoymathew07/Catatron/Catatron/install/catatron_gait_control/lib/python3.10/site-packages/catatron_gait_control-0.0.0-py3.10.egg-info
+[1.009s] running install_scripts
+[1.112s] Installing joy script to /home/ajoymathew07/Catatron/Catatron/install/catatron_gait_control/lib/catatron_gait_control
+[1.113s] Installing joystick_controller script to /home/ajoymathew07/Catatron/Catatron/install/catatron_gait_control/lib/catatron_gait_control
+[1.113s] Installing main_control script to /home/ajoymathew07/Catatron/Catatron/install/catatron_gait_control/lib/catatron_gait_control
+[1.113s] writing list of installed files to '/home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/install.log'
+[1.140s] Invoked command in '/home/ajoymathew07/Catatron/Catatron/src/catatron_gait_control' returned '0': PYTHONPATH=/home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ajoymathew07/Catatron/Catatron/install/catatron_gait_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/catatron_gait_control build --build-base /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/build install --record /home/ajoymathew07/Catatron/Catatron/build/catatron_gait_control/install.log --single-version-externally-managed install_data
