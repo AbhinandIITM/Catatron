@@ -117,8 +117,7 @@ class CatatronGaitControl(Node):
         self.currentController.updateStateCommand(msg, self.state, self.command)
         self.get_logger().info(f"arg_command processed command: {self.command}")
         self.get_logger().info(f"arg_command processed state: {self.state}")
-
-    
+       
 
     def imu_orientation(self,msg):
         q = msg.orientation

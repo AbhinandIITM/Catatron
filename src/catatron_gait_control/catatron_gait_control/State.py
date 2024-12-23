@@ -49,7 +49,7 @@ class Command(object):
 
         #Initialized in CatatronGaitControl
         self.robot_height = -default_height
-        self.trot_event = False
+        self.trot_event = True
         self.crawl_event = False
         self.rest_event = False
         self.stand_event = False

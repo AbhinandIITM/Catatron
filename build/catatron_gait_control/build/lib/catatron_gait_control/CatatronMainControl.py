@@ -41,6 +41,8 @@ class CatatronMainControl(Node):
         self.set_client = self.create_client(SetParameters, '/joint_angles_param/set_parameters')
         self.catatron_gait_control = CatatronGaitControl(body, legs, USE_IMU)
         self.inverseKinematics = InverseKinematics(body, legs)
+        self.declare_parameter('joint_angles', [1.0]*12)  # Declare with default empty list
+
         
         if USE_IMU:
             self.create_subscription(Imu, "/imu_plugin/out", self.catatron_gait_control.imu_orientation, 10)
@@ -61,7 +63,8 @@ class CatatronMainControl(Node):
         if future.result() is not None:
             response = future.result()
             angles = response.values[0].double_array_value  
-            self.get_logger().info(f"{angles} received.")
+            self.get_logger().info(f"{angles} received in get_joint_angles")
+            print(f"received in get_joint_angles{angles}")
             return angles
             
         else:
@@ -71,9 +74,12 @@ class CatatronMainControl(Node):
     def set_angles(self, angles):
         param_request = SetParameters.Request()
         param_value = Parameter()
+        param_value.name= "joint_angles"
+        print(f"set_angles received{angles}")
         param_value.value.type = ParameterType.PARAMETER_DOUBLE_ARRAY
         param_value.value.double_array_value = angles  
         param_request.parameters = [param_value]
+        print(f"param value has values :{param_value.value.double_array_value}")
 
         future = self.set_client.call_async(param_request)
         rclpy.spin_until_future_complete(self, future)
@@ -115,9 +121,9 @@ class CatatronMainControl(Node):
         # print(angles) 
         #change order of joint_names
         joint_names = [
-            "hip1_fr", "hip2_fl", "hip2_fr", "hip1_fl",
-            "hip2_br", "hip2_bl", "hip1_bl", "knee_bl",
-            "knee_fr", "hip1_br", "knee_fl", "knee_br"
+            "hip1_fr", "hip1_fl", "hip2_fr", "hip2_fl",
+            "hip1_br", "hip2_bl", "hip1_bl", "knee_br",
+            "knee_fr", "hip2_br", "knee_fl", "knee_bl"
         ]     
         points = []
         

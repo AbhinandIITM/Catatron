@@ -868,5 +868,16 @@
     <parameters>/home/ajoymathew07/Catatron/Catatron/src/catatron_description/config/joint_controller.yaml</parameters>
   </plugin>
 </gazebo> 
+ <!-- Joint state publisher plugin -->
+  <gazebo>
+    <plugin name="joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
+        <robotNamespace>notspot_gazebo</robotNamespace>
+        <jointName>hip1_fl,hip1_fr,hip1_br,hip1_bl,
+                  hip2_fl,hip2_fr,hip2_br,hip2_bl,
+                  knee_fl,knee_fr,knee_br,knee_bl
+        </jointName>
+        <updateRate>100</updateRate>
+    </plugin>
+  </gazebo>
 
 </robot>
