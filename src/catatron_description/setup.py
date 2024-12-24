@@ -14,7 +14,7 @@ setup(
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name, 'launch'), glob.glob('launch/*.launch.py')),  # Corrected glob usage
         (os.path.join('share', package_name, 'urdf'), glob.glob('urdf/*')),
-        (os.path.join('share', package_name, 'mesh_files/dae_files'), glob.glob('mesh_files/dae/*')),
+        (os.path.join('share', package_name, 'mesh_files'), glob.glob('mesh_files/*')),
         (os.path.join('share', package_name, 'config'), glob.glob('config/*')),
         (os.path.join('share', package_name, 'catatron_description'), glob.glob('catatron_description/*.py')),
         (os.path.join('share', package_name, 'worlds'), glob.glob('worlds/*.world')),

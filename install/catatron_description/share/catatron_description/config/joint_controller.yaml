@@ -1,3 +1,4 @@
+---
 controller_manager:
   ros__parameters:
     update_rate: 1000
@@ -25,18 +26,19 @@ joint_trajectory_controller:
       - RL2_joint
       - RL3_joint
     allow_nonzero_velocity_at_trajectory_end: false
+    interface_name: position
     command_interfaces:
       - position  # Ensure position is listed here if it's the interface you intend to control
     state_interfaces:
       - position
       - velocity
      
-    constraints:
-      goal_time: 0.5
-      stopped_velocity_tolerance: 0.01
-      trajectory_execution:
-        execution_duration: 1.0
-        velocity_scaling: 1.0
+    # constraints:
+    #   goal_time: 0.5
+    #   stopped_velocity_tolerance: 0.01
+    #   trajectory_execution:
+    #     execution_duration: 1.0
+    #     velocity_scaling: 1.0
 
 
       # FR1_joint_controller:

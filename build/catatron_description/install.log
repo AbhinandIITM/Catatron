@@ -15,7 +15,15 @@
 /home/ajoymathew07/Catatron/Catatron/install/catatron_description/share/catatron_description/launch/robot.launch.py
 /home/ajoymathew07/Catatron/Catatron/install/catatron_description/share/catatron_description/launch/pushup.launch.py
 /home/ajoymathew07/Catatron/Catatron/install/catatron_description/share/catatron_description/urdf/catatron.urdf
-/home/ajoymathew07/Catatron/Catatron/install/catatron_description/share/catatron_description/mesh_files/dae_files
+/home/ajoymathew07/Catatron/Catatron/install/catatron_description/share/catatron_description/mesh_files/body_obj.dae
+/home/ajoymathew07/Catatron/Catatron/install/catatron_description/share/catatron_description/mesh_files/R2_obj.dae
+/home/ajoymathew07/Catatron/Catatron/install/catatron_description/share/catatron_description/mesh_files/FR1_obj.dae
+/home/ajoymathew07/Catatron/Catatron/install/catatron_description/share/catatron_description/mesh_files/R3_obj.dae
+/home/ajoymathew07/Catatron/Catatron/install/catatron_description/share/catatron_description/mesh_files/RL1_obj.dae
+/home/ajoymathew07/Catatron/Catatron/install/catatron_description/share/catatron_description/mesh_files/RR1_obj.dae
+/home/ajoymathew07/Catatron/Catatron/install/catatron_description/share/catatron_description/mesh_files/L3_obj.dae
+/home/ajoymathew07/Catatron/Catatron/install/catatron_description/share/catatron_description/mesh_files/L2_obj.dae
+/home/ajoymathew07/Catatron/Catatron/install/catatron_description/share/catatron_description/mesh_files/FL1_obj.dae
 /home/ajoymathew07/Catatron/Catatron/install/catatron_description/share/catatron_description/config/joint_controller.yaml
 /home/ajoymathew07/Catatron/Catatron/install/catatron_description/share/catatron_description/catatron_description/controller.py
 /home/ajoymathew07/Catatron/Catatron/install/catatron_description/share/catatron_description/catatron_description/inv_kin_dual.py

@@ -17,6 +17,15 @@ catatron_description/joint_angles_param.py
 config/joint_controller.yaml
 launch/pushup.launch.py
 launch/robot.launch.py
+mesh_files/FL1_obj.dae
+mesh_files/FR1_obj.dae
+mesh_files/L2_obj.dae
+mesh_files/L3_obj.dae
+mesh_files/R2_obj.dae
+mesh_files/R3_obj.dae
+mesh_files/RL1_obj.dae
+mesh_files/RR1_obj.dae
+mesh_files/body_obj.dae
 resource/catatron_description
 urdf/catatron.urdf
 worlds/empty_world.world
