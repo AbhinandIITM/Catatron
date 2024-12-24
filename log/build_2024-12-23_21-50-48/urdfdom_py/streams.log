@@ -1,0 +1,33 @@
+[0.942s] Invoking command in '/home/ajoymathew07/Catatron/Catatron/src/urdf_parser_py': PYTHONPATH=/home/ajoymathew07/Catatron/Catatron/build/urdfdom_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ajoymathew07/Catatron/Catatron/install/urdfdom_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/urdfdom_py build --build-base /home/ajoymathew07/Catatron/Catatron/build/urdfdom_py/build install --record /home/ajoymathew07/Catatron/Catatron/build/urdfdom_py/install.log --single-version-externally-managed install_data
+[1.051s] /home/ajoymathew07/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[1.051s]   warnings.warn(msg)
+[1.127s] running egg_info
+[1.139s] writing ../../build/urdfdom_py/urdfdom_py.egg-info/PKG-INFO
+[1.140s] writing dependency_links to ../../build/urdfdom_py/urdfdom_py.egg-info/dependency_links.txt
+[1.140s] writing entry points to ../../build/urdfdom_py/urdfdom_py.egg-info/entry_points.txt
+[1.140s] writing requirements to ../../build/urdfdom_py/urdfdom_py.egg-info/requires.txt
+[1.140s] writing top-level names to ../../build/urdfdom_py/urdfdom_py.egg-info/top_level.txt
+[1.166s] reading manifest file '../../build/urdfdom_py/urdfdom_py.egg-info/SOURCES.txt'
+[1.167s] adding license file 'LICENSE'
+[1.167s] writing manifest file '../../build/urdfdom_py/urdfdom_py.egg-info/SOURCES.txt'
+[1.167s] running build
+[1.168s] running build_py
+[1.168s] copying src/urdf_parser_py/__init__.py -> /home/ajoymathew07/Catatron/Catatron/build/urdfdom_py/build/lib/urdf_parser_py
+[1.168s] copying src/urdf_parser_py/display_urdf.py -> /home/ajoymathew07/Catatron/Catatron/build/urdfdom_py/build/lib/urdf_parser_py
+[1.168s] copying src/urdf_parser_py/sdf.py -> /home/ajoymathew07/Catatron/Catatron/build/urdfdom_py/build/lib/urdf_parser_py
+[1.168s] copying src/urdf_parser_py/urdf.py -> /home/ajoymathew07/Catatron/Catatron/build/urdfdom_py/build/lib/urdf_parser_py
+[1.168s] copying src/urdf_parser_py/xml_reflection/core.py -> /home/ajoymathew07/Catatron/Catatron/build/urdfdom_py/build/lib/urdf_parser_py/xml_reflection
+[1.169s] copying src/urdf_parser_py/xml_reflection/__init__.py -> /home/ajoymathew07/Catatron/Catatron/build/urdfdom_py/build/lib/urdf_parser_py/xml_reflection
+[1.169s] copying src/urdf_parser_py/xml_reflection/basics.py -> /home/ajoymathew07/Catatron/Catatron/build/urdfdom_py/build/lib/urdf_parser_py/xml_reflection
+[1.169s] running install
+[1.173s] running install_lib
+[1.187s] running install_data
+[1.187s] copying resource/urdfdom_py -> /home/ajoymathew07/Catatron/Catatron/install/urdfdom_py/share/ament_index/resource_index/packages
+[1.187s] copying package.xml -> /home/ajoymathew07/Catatron/Catatron/install/urdfdom_py/share/urdfdom_py
+[1.187s] running install_egg_info
+[1.202s] removing '/home/ajoymathew07/Catatron/Catatron/install/urdfdom_py/lib/python3.10/site-packages/urdfdom_py-1.2.1-py3.10.egg-info' (and everything under it)
+[1.202s] Copying ../../build/urdfdom_py/urdfdom_py.egg-info to /home/ajoymathew07/Catatron/Catatron/install/urdfdom_py/lib/python3.10/site-packages/urdfdom_py-1.2.1-py3.10.egg-info
+[1.203s] running install_scripts
+[1.307s] Installing display_urdf script to /home/ajoymathew07/Catatron/Catatron/install/urdfdom_py/lib/urdfdom_py
+[1.307s] writing list of installed files to '/home/ajoymathew07/Catatron/Catatron/build/urdfdom_py/install.log'
+[1.347s] Invoked command in '/home/ajoymathew07/Catatron/Catatron/src/urdf_parser_py' returned '0': PYTHONPATH=/home/ajoymathew07/Catatron/Catatron/build/urdfdom_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ajoymathew07/Catatron/Catatron/install/urdfdom_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/urdfdom_py build --build-base /home/ajoymathew07/Catatron/Catatron/build/urdfdom_py/build install --record /home/ajoymathew07/Catatron/Catatron/build/urdfdom_py/install.log --single-version-externally-managed install_data

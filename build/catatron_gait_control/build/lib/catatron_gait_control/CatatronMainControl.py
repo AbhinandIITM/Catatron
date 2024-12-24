@@ -121,9 +121,11 @@ class CatatronMainControl(Node):
         # print(angles) 
         #change order of joint_names
         joint_names = [
-            "hip1_fr", "hip1_fl", "hip2_fr", "hip2_fl",
-            "hip1_br", "hip2_bl", "hip1_bl", "knee_br",
-            "knee_fr", "hip2_br", "knee_fl", "knee_bl"
+            "FR1_joint", "FR2_joint", "FR3_joint",
+            "FL1_joint", "FL2_joint", "FL3_joint",
+            "RR1_joint", "RR2_joint", "RR3_joint",
+            "RL1_joint", "RL2_joint", "RL3_joint"
+            
         ]     
         points = []
         

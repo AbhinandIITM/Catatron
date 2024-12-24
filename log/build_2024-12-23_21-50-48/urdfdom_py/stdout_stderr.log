@@ -1,0 +1,31 @@
+/home/ajoymathew07/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running egg_info
+writing ../../build/urdfdom_py/urdfdom_py.egg-info/PKG-INFO
+writing dependency_links to ../../build/urdfdom_py/urdfdom_py.egg-info/dependency_links.txt
+writing entry points to ../../build/urdfdom_py/urdfdom_py.egg-info/entry_points.txt
+writing requirements to ../../build/urdfdom_py/urdfdom_py.egg-info/requires.txt
+writing top-level names to ../../build/urdfdom_py/urdfdom_py.egg-info/top_level.txt
+reading manifest file '../../build/urdfdom_py/urdfdom_py.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/urdfdom_py/urdfdom_py.egg-info/SOURCES.txt'
+running build
+running build_py
+copying src/urdf_parser_py/__init__.py -> /home/ajoymathew07/Catatron/Catatron/build/urdfdom_py/build/lib/urdf_parser_py
+copying src/urdf_parser_py/display_urdf.py -> /home/ajoymathew07/Catatron/Catatron/build/urdfdom_py/build/lib/urdf_parser_py
+copying src/urdf_parser_py/sdf.py -> /home/ajoymathew07/Catatron/Catatron/build/urdfdom_py/build/lib/urdf_parser_py
+copying src/urdf_parser_py/urdf.py -> /home/ajoymathew07/Catatron/Catatron/build/urdfdom_py/build/lib/urdf_parser_py
+copying src/urdf_parser_py/xml_reflection/core.py -> /home/ajoymathew07/Catatron/Catatron/build/urdfdom_py/build/lib/urdf_parser_py/xml_reflection
+copying src/urdf_parser_py/xml_reflection/__init__.py -> /home/ajoymathew07/Catatron/Catatron/build/urdfdom_py/build/lib/urdf_parser_py/xml_reflection
+copying src/urdf_parser_py/xml_reflection/basics.py -> /home/ajoymathew07/Catatron/Catatron/build/urdfdom_py/build/lib/urdf_parser_py/xml_reflection
+running install
+running install_lib
+running install_data
+copying resource/urdfdom_py -> /home/ajoymathew07/Catatron/Catatron/install/urdfdom_py/share/ament_index/resource_index/packages
+copying package.xml -> /home/ajoymathew07/Catatron/Catatron/install/urdfdom_py/share/urdfdom_py
+running install_egg_info
+removing '/home/ajoymathew07/Catatron/Catatron/install/urdfdom_py/lib/python3.10/site-packages/urdfdom_py-1.2.1-py3.10.egg-info' (and everything under it)
+Copying ../../build/urdfdom_py/urdfdom_py.egg-info to /home/ajoymathew07/Catatron/Catatron/install/urdfdom_py/lib/python3.10/site-packages/urdfdom_py-1.2.1-py3.10.egg-info
+running install_scripts
+Installing display_urdf script to /home/ajoymathew07/Catatron/Catatron/install/urdfdom_py/lib/urdfdom_py
+writing list of installed files to '/home/ajoymathew07/Catatron/Catatron/build/urdfdom_py/install.log'

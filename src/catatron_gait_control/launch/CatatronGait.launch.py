@@ -16,7 +16,6 @@ def generate_launch_description():
     urdf_file_path = os.path.join(desc_share_dir, 'urdf', 'catatron.urdf')
     with open(urdf_file_path, 'r') as urdf_file:
         robot_description_content = urdf_file.read()
-
     params = {'robot_description': robot_description_content}
 
     robot_state_publisher_cmd = Node(
@@ -56,7 +55,7 @@ def generate_launch_description():
         executable="spawner",
         arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"],
     )
-
+    
     robot_controller_spawner = Node(
         package="controller_manager",
         executable="spawner",
