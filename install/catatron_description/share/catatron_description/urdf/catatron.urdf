@@ -1,7 +1,8 @@
 <?xml version="1.0"  ?>
 <robot name="catatron" >
   <!-- base_link -->
-
+  <!-- Dummy root link -->
+  <link name="world"/>
 
   <!-- Original base_link -->
   <link name="base_link">
@@ -19,7 +20,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://catatron_description/mesh_files/body_obj.dae" />
+        <mesh filename="package://catatron_description/mesh_files/body_obj.obj" />
       </geometry>
     </visual>
     <collision>
@@ -29,32 +30,13 @@
       </geometry>
     </collision>
   </link>
-  <link name="imu_link">
-    <visual>
-        <geometry>
-            <box size="0.05 0.05 0.01"/> 
-        </geometry>
-        <!-- <material name="black"/> -->
-    </visual>
-    <collision>
-        <geometry>
-            <box size="0.05 0.05 0.01"/>
-        </geometry>
-    </collision>
-    <inertial>
-        <mass value="0.05"/> 
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <inertia ixx="1e-3" ixy="0.0" ixz="0.0" iyy="1e-3" iyz="0.0" izz="1e-3"/>
-    </inertial>
-  </link>
 
-  <joint name="imu_joint" type="fixed">
-        <parent link="base_link"/>
-        <child link="imu_link"/>
-        <origin xyz="0.0 0.0 0.06" rpy="0 0 0"/>
+  <!-- Fixed joint connecting world to base_link -->
+  <joint name="world_to_base" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
   </joint>
-
-
   <!-- FR1 -->
   <link name="FR1">
     <inertial>
@@ -71,7 +53,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://catatron_description/mesh_files/FR1_obj.dae" />
+        <mesh filename="package://catatron_description/mesh_files/FR1_obj.obj" />
       </geometry>
     </visual>
   </link>
@@ -90,9 +72,9 @@
         izz="0.00011187" />
     </inertial>
     <visual>
-      <!-- <origin xyz="0 0 0" rpy="0 0 0" /> -->
+      <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://catatron_description/mesh_files/R2_obj.dae" />
+        <mesh filename="package://catatron_description/mesh_files/R2_obj.obj" />
       </geometry>
     </visual>
     <collision>
@@ -117,9 +99,9 @@
         izz="2.7469E-05" />
     </inertial>
     <visual>
-      <!-- <origin xyz="0 0 0" rpy="0 0 0" /> -->
+      <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://catatron_description/mesh_files/R3_obj.dae" />
+        <mesh filename="package://catatron_description/mesh_files/R3_obj.obj" />
       </geometry>
     </visual>
     <collision>
@@ -167,12 +149,12 @@
         izz="6.8645E-05" />
     </inertial>
     <visual>
-      <!-- <origin
+      <origin
         xyz="0 0 0"
-        rpy="0 0 0" /> -->
+        rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://catatron_description/mesh_files/FL1_obj.dae" />
+          filename="package://catatron_description/mesh_files/FL1_obj.obj" />
       </geometry>
     </visual>
   </link>
@@ -194,12 +176,12 @@
         izz="0.00011187" />
     </inertial>
     <visual>
-      <!-- <origin
+      <origin
         xyz="0 0 0"
-        rpy="0 0 0" /> -->
+        rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://catatron_description/mesh_files/L2_obj.dae" />
+          filename="package://catatron_description/mesh_files/L2_obj.obj" />
       </geometry>
     </visual>
     <collision>
@@ -229,12 +211,12 @@
         izz="2.7469E-05" />
     </inertial>
     <visual>
-      <!-- <origin
+      <origin
         xyz="0 0 0"
-        rpy="0 0 0" /> -->
+        rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://catatron_description/mesh_files/L3_obj.dae" />
+          filename="package://catatron_description/mesh_files/L3_obj.obj" />
       </geometry>
     </visual>
     <collision>
@@ -264,9 +246,9 @@
         izz="5.443E-012" />
     </inertial>
     <collision>
-      <!-- <origin
+      <origin
         xyz="0 0 0"
-        rpy="0 0 0" /> -->
+        rpy="0 0 0" />
       <geometry>
         <sphere radius="0.0072"/>
       </geometry>
@@ -289,12 +271,12 @@
         izz="6.8646E-05" />
     </inertial>
     <visual>
-      <!-- <origin
+      <origin
         xyz="0 0 0"
-        rpy="0 0 0" /> -->
+        rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://catatron_description/mesh_files/RR1_obj.dae" />
+          filename="package://catatron_description/mesh_files/RR1_obj.obj" />
       </geometry>
     </visual>
   </link>
@@ -316,12 +298,12 @@
         izz="0.00011187" />
     </inertial>
     <visual>
-      <!-- <origin
+      <origin
         xyz="0 0 0"
-        rpy="0 0 0" /> -->
+        rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://catatron_description/mesh_files/R2_obj.dae" />
+          filename="package://catatron_description/mesh_files/R2_obj.obj" />
       </geometry>
     </visual>
     <collision>
@@ -351,12 +333,12 @@
         izz="2.7469E-05" />
     </inertial>
     <visual>
-      <!-- <origin
+      <origin
         xyz="0 0 0"
-        rpy="0 0 0" /> -->
+        rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://catatron_description/mesh_files/R3_obj.dae" />
+          filename="package://catatron_description/mesh_files/R3_obj.obj" />
       </geometry>
     </visual>
     <collision>
@@ -413,12 +395,12 @@
         izz="6.8646E-05" />
     </inertial>
     <visual>
-      <!-- <origin
+      <origin
         xyz="0 0 0"
-        rpy="0 0 0" /> -->
+        rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://catatron_catatron_description/mesh_files/RL1_obj.dae" />
+          filename="package://catatron_catatron_description/mesh_files/RL1_obj.obj" />
       </geometry>
     </visual>
   </link>
@@ -440,12 +422,12 @@
         izz="0.00011187" />
     </inertial>
     <visual>
-      <!-- <origin
+      <origin
         xyz="0 0 0"
-        rpy="0 0 0" /> -->
+        rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://catatron_description/mesh_files/L2_obj.dae" />
+          filename="package://catatron_description/mesh_files/L2_obj.obj" />
       </geometry>
     </visual>
     <collision>
@@ -475,12 +457,12 @@
         izz="2.7469E-05" />
     </inertial>
     <visual>
-      <!-- <origin
+      <origin
         xyz="0 0 0"
-        rpy="0 0 0" /> -->
+        rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://catatron_description/mesh_files/L3_obj.dae" />
+          filename="package://catatron_description/mesh_files/L3_obj.obj" />
       </geometry>
     </visual>
     <collision>
@@ -520,7 +502,6 @@
   </link>
 
 <!-- JOINTS -->
-
 
  <joint name="FR1_joint" type="revolute">
   <origin xyz="0.0954 -0.04 0" rpy="1.5708 0 -1.5708" />
@@ -647,26 +628,6 @@
   <axis xyz="0 0 0" />
 </joint>
 
-<gazebo reference="imu_link">
-    <sensor name="imu_sensor" type="imu">
-        <always_on>true</always_on>
-        <update_rate>10</update_rate>
-        <visualize>true</visualize>
-        <topic>imu</topic>
-        <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
-            <topicName>imu</topicName>
-            <bodyName>imu_link</bodyName>
-            <updateRateHZ>10.0</updateRateHZ>
-            <gaussianNoise>0.0</gaussianNoise>
-            <xyzOffset>0 0 0</xyzOffset>
-            <rpyOffset>0 0 0</rpyOffset>
-            <frameName>imu_link</frameName>
-            <initialOrientationAsReference>true</initialOrientationAsReference>
-        </plugin>
-        <pose>0 0 0 0 0 0</pose>
-    </sensor>
-</gazebo>
- 
 
 <ros2_control name="GazeboSystem" type="system">
   <hardware>
@@ -803,7 +764,6 @@
 
 
 
-
  <gazebo>
   <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
     <parameters>/home/ajoymathew07/Catatron/Catatron/src/catatron_description/config/joint_controller.yaml</parameters>
@@ -833,7 +793,6 @@
     <pose>0 0 0 0 0 0</pose>
   </sensor>
 </gazebo>
-
   -->
 
   <!-- Joint state publisher plugin -->
