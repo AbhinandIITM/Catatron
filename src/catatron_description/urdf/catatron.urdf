@@ -7,25 +7,22 @@
   <link name="base_link">
     <visual>
       <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/body_obj.obj"/>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/body.dae"/>
       </geometry>
       <!-- <material name="blue"/> -->
     </visual>
     <inertial>
-      <origin xyz="-0.00048043 9.0814E-05 0.00023409" rpy="0 0 0" />
+      <origin xyz="0.000 0.000 0.000" rpy ="0.000 0.000 0.000"/>
       <mass value="2.000"/>
-     <inertia
-        ixx="0.00058474"
-        ixy="-1.0045E-06"
-        ixz="1.0886E-08"
-        iyy="0.00029699"
-        iyz="3.2027E-08"
-        izz="0.00063853" />
+      <inertia
+        ixx="0.03562" ixy="0.00000" ixz="0.00000"
+        iyy="0.04262" iyz="0.00000"
+        izz="0.04508"/>
     </inertial>
     <collision>
       <origin xyz="0.000 0.000 0.0" rpy ="0.000 0.000 0.000"/>
       <geometry>
-         <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/body_obj.obj"/>
+         <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/body.dae"/>
       </geometry>
   
     </collision>
@@ -168,24 +165,21 @@
   <link name="hip_fl_link">
     <visual>
       <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/FL1_obj.obj"/>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/FL1.dae"/>
       </geometry>
     </visual>
     <inertial>
-      <origin xyz="-0.011124 -0.0032814 0.00014476" rpy="0 0 0" />
+      <origin xyz="0.000 0.000 0.000" rpy ="0.000 0.000 0.000"/>
       <mass value="0.233"/>
-       <inertia
-        ixx="4.4732E-05"
-        ixy="1.0746E-05"
-        ixz="1.7651E-07"
-        iyy="4.3482E-05"
-        iyz="-7.8105E-08"
-        izz="6.8645E-05" />
+      <inertia
+        ixx="0.00216" ixy="-0.00001" ixz="0.00001"
+        iyy="0.00216" iyz="0.00001"
+        izz="0.00211"/>
     </inertial>
     <collision>
       <origin xyz="-0.00 -0.00 0.00" rpy ="0.000 0.000 0.000"/>
       <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/FL1_obj.obj"/>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/FL1.dae"/>
       </geometry>
   
     </collision>
@@ -194,11 +188,11 @@
   <link name="hip_fr_link">
     <visual>
       <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/FR1_obj.obj"/>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/FR1.dae"/>
       </geometry>
     </visual>
     <inertial>
-      <origin xyz="0.011092 -0.0032719 0.00019267" rpy="0 0 0" />
+      <origin xyz="0.000 0.000 0.000" rpy ="0.000 0.000 0.000"/>
       <mass value="0.233"/>
       <inertia
         ixx="0.00216" ixy="0.00001" ixz="0.00001"
@@ -208,7 +202,7 @@
     <collision>
       <origin xyz="-0.00 0.00 0.00" rpy ="0.000 0.000 0.000"/>
       <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/FR1_obj.obj"/>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/FR1.dae"/>
       </geometry>
   
     </collision>
@@ -217,12 +211,11 @@
   <link name="hip_bl_link">
     <visual>
       <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/RL1_obj.obj"/>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/RL1.dae"/>
       </geometry>
     </visual>
     <inertial>
-      <origin
-        xyz="-0.011092 -0.0032719 -0.00019266" rpy="0 0 0" />
+      <origin xyz="0.000 0.000 0.000" rpy ="0.000 0.000 0.000"/>
       <mass value="0.233"/>
       <inertia
         ixx="0.00216" ixy="0.00001" ixz="-0.00001"
@@ -232,7 +225,7 @@
     <collision>
       <origin xyz="0.00 -0.00 0.00" rpy ="0.000 0.000 0.000"/>
       <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/RL1_obj.obj"/>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/RL1.dae"/>
       </geometry>
   
     </collision>
@@ -241,13 +234,11 @@
   <link name="hip_br_link">
     <visual>
       <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/RR1_obj.obj"/>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/RL1.dae"/>
       </geometry>
     </visual>
     <inertial>
-       <origin
-        xyz="0.011092 -0.0032719 -0.00019266"
-        rpy="0 0 0" />
+      <origin xyz="0.000 0.000 0.000" rpy ="0.000 0.000 0.000"/>
       <mass value="0.233"/>
       <inertia
         ixx="0.00216" ixy="-0.00001" ixz="-0.00001"
@@ -257,7 +248,7 @@
     <collision>
       <origin xyz="0.00 0.00 0.00" rpy ="0.000 0.000 0.000"/>
       <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/RR1_obj.obj"/>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/RL1.dae"/>
       </geometry>
   
     </collision>
@@ -266,13 +257,11 @@
   <link name="femur_fl_link">
     <visual>
       <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/L2_obj.obj"/>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/FL2.dae"/>
       </geometry>
     </visual>
     <inertial>
-      <origin
-        xyz="0.038603 -0.0025578 0.0001752"
-        rpy="0 0 0" />
+      <origin xyz="0.000 0.000 0.000" rpy ="0.000 0.000 0.000"/>
       <mass value="0.084"/>
       <inertia
         ixx="0.00414" ixy="0.00000" ixz="0.00000"
@@ -282,7 +271,7 @@
     <collision>
       <origin xyz="0.000 0.0 -0.0" rpy ="0.000 0.000 0.000"/>
       <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/L2_obj.obj"/>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/FL2.dae"/>
       </geometry>
       
     </collision>
@@ -291,64 +280,11 @@
   <link name="femur_fr_link">
     <visual>
       <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/R2_obj.obj"/>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/FR2.dae"/>
       </geometry>
     </visual>
     <inertial>
-       <origin xyz="0.038603 -0.0025578 -0.0001752" rpy="0 0 0" />
-      <mass value="0.084"/>
-    <inertia
-        ixx="2.365E-05"
-        ixy="-5.3771E-07"
-        ixz="1.6144E-06"
-        iyy="0.00010469"
-        iyz="-8.306E-08"
-        izz="0.00011187" />
-    </inertial>
-    <collision>
-      <origin xyz="0.000 -0.0 -0.0" rpy ="0.000 0.000 0.000"/>
-      <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/R2_obj.obj"/>
-      </geometry>
-  
-    </collision>
-  </link>
-
-  <link name="femur_bl_link">
-    <visual>
-      <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/L2_obj.obj"/>
-      </geometry>
-    </visual>
-    <inertial>
-       <origin
-        xyz="0.038603 -0.0025578 0.0001752"
-        rpy="0 0 0" />
-      <mass value="0.084"/>
-      <inertia
-        ixx="0.00414" ixy="0.00000" ixz="0.00000"
-        iyy="0.00410" iyz="0.00006"
-        izz="0.00386"/>
-    </inertial>
-    <collision>
-      <origin xyz="0.000 0.0 -0.0" rpy ="0.000 0.000 0.000"/>
-      <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/L2_obj.obj"/>
-      </geometry>
-  
-    </collision>
-  </link>
-
-  <link name="femur_br_link">
-    <visual>
-      <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/R2_obj.obj"/>
-      </geometry>
-    </visual>
-    <inertial>
-       <origin
-        xyz="0.038603 -0.0025578 -0.0001752"
-        rpy="0 0 0" />
+      <origin xyz="0.000 0.000 0.000" rpy ="0.000 0.000 0.000"/>
       <mass value="0.084"/>
       <inertia
         ixx="0.00414" ixy="0.00000" ixz="0.00000"
@@ -358,7 +294,53 @@
     <collision>
       <origin xyz="0.000 -0.0 -0.0" rpy ="0.000 0.000 0.000"/>
       <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/R2_obj.obj"/>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/FR2.dae"/>
+      </geometry>
+  
+    </collision>
+  </link>
+
+  <link name="femur_bl_link">
+    <visual>
+      <geometry>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/RL2.dae"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <origin xyz="0.000 0.000 0.000" rpy ="0.000 0.000 0.000"/>
+      <mass value="0.084"/>
+      <inertia
+        ixx="0.00414" ixy="0.00000" ixz="0.00000"
+        iyy="0.00410" iyz="0.00006"
+        izz="0.00386"/>
+    </inertial>
+    <collision>
+      <origin xyz="0.000 0.0 -0.0" rpy ="0.000 0.000 0.000"/>
+      <geometry>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/RL2.dae"/>
+      </geometry>
+  
+    </collision>
+  </link>
+
+  <link name="femur_br_link">
+    <visual>
+      <geometry>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/RR2.dae"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <origin xyz="0.000 0.000 0.000" rpy ="0.000 0.000 0.000"/>
+      <mass value="0.084"/>
+      <inertia
+        ixx="0.00414" ixy="0.00000" ixz="0.00000"
+        iyy="0.00410" iyz="-0.00006"
+        izz="0.00386"/>
+    </inertial>
+    <collision>
+      <origin xyz="0.000 -0.0 -0.0" rpy ="0.000 0.000 0.000"/>
+      <geometry>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/RR2.dae"/>
       </geometry>
  
     </collision>
@@ -367,28 +349,21 @@
   <link name="tibia_fl_link">
     <visual>
       <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/L3_obj.obj"/>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/FL3.dae"/>
       </geometry>
     </visual>
     <inertial>
-       <origin
-        xyz="0.029797 -0.0009883 9.2751E-05"
-        rpy="0 0 0" />
+      <origin xyz="0.000 0.000 0.000" rpy ="0.000 0.000 0.000"/>
       <mass value="0.034"/>
       <inertia
-        ixx="6.565E-07"
-        ixy="6.8071E-07"
-        ixz="1.0503E-07"
-        iyy="2.7257E-05"
-        iyz="-3.918E-09"
-        izz="2.7469E-05" />
+        ixx="0.00159" ixy="0.00000" ixz="-0.00001"
+        iyy="0.00159" iyz="0.00000"
+        izz="0.00147"/>
     </inertial>
     <collision>
-      <origin
-        xyz="0.045 0 0"
-        rpy="0 1.57075 0" />
+      <origin xyz="0.000 -0.0 -0.0" rpy ="0.000 0.000 0.000"/>
       <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/L3_obj.obj"/>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/FL3.dae"/>
       </geometry>
   
     </collision>
@@ -397,11 +372,11 @@
   <link name="tibia_fr_link">
     <visual>
       <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/R3_obj.obj"/>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/FR3.dae"/>
       </geometry>
     </visual>
     <inertial>
-       <origin xyz="0.029797 -0.00098828 -9.2749E-05" rpy="0 0 0" />
+      <origin xyz="0.000 0.000 0.000" rpy ="0.000 0.000 0.000"/>
       <mass value="0.034"/>
       <inertia
         ixx="0.00159" ixy="0.00000" ixz="-0.00001"
@@ -411,7 +386,7 @@
     <collision>
       <origin xyz="0.000 -0.0 -0.0" rpy ="0.000 0.000 0.000"/>
       <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/R3_obj.obj"/>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/FR3.dae"/>
       </geometry>
   
     </collision>
@@ -420,13 +395,11 @@
   <link name="tibia_bl_link">
     <visual>
       <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/L3_obj.obj"/>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/RL3.dae"/>
       </geometry>
     </visual>
     <inertial>
-       <origin
-        xyz="0.029797 -0.0009883 9.2751E-05"
-        rpy="0 0 0" />
+      <origin xyz="0.000 0.000 0.000" rpy ="0.000 0.000 0.000"/>
       <mass value="0.034"/>
       <inertia
         ixx="0.00159" ixy="0.00000" ixz="-0.00001"
@@ -436,7 +409,7 @@
     <collision>
       <origin xyz="0.000 -0.0 -0.0" rpy ="0.000 0.000 0.000"/>
       <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/L3_obj.obj"/>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/RL3.dae"/>
       </geometry>
   
     </collision>
@@ -445,13 +418,11 @@
   <link name="tibia_br_link">
     <visual>
       <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/R3_obj.obj"/>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/RR3.dae"/>
       </geometry>
     </visual>
     <inertial>
-      <origin
-        xyz="0.029797 -0.00098828 -9.2749E-05"
-        rpy="0 0 0" />
+      <origin xyz="0.000 0.000 0.000" rpy ="0.000 0.000 0.000"/>
       <mass value="0.034"/>
       <inertia
         ixx="0.00159" ixy="0.00000" ixz="-0.00001"
@@ -461,7 +432,7 @@
     <collision>
       <origin xyz="0.000 -0.0 -0.0" rpy ="0.000 0.000 0.000"/>
       <geometry>
-        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/R3_obj.obj"/>
+        <mesh filename= "/home/ajoymathew07/Catatron/Catatron/src/catatron_description/mesh_files/RR3.dae"/>
       </geometry>
   
     </collision>
