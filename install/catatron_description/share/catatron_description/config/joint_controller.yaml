@@ -13,18 +13,21 @@ controller_manager:
 joint_trajectory_controller:
   ros__parameters:
     joints:
-      - FR1_joint
-      - FR2_joint
-      - FR3_joint
-      - FL1_joint
-      - FL2_joint
-      - FL3_joint
-      - RR1_joint
-      - RR2_joint
-      - RR3_joint
-      - RL1_joint
-      - RL2_joint
-      - RL3_joint
+      - hip1_fl
+      - hip1_fr
+      - hip1_br
+      - hip1_bl
+      - hip2_bl
+      - hip2_br
+      - hip2_fl
+      - hip2_fr
+      - knee_fr
+      - knee_fl
+      - knee_bl
+      - knee_br
+
+      
+     
     allow_nonzero_velocity_at_trajectory_end: false
     interface_name: position
     command_interfaces:
