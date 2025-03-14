@@ -26,7 +26,8 @@ class RobotDriverNode:
 
         # Joint angles (12 servos assumed)
         self.joint_angles = [0] * 12  # Initial positions
-        self.sign=[-1,-1,1,-1,1,1,1,-1,1,1,1,1]
+        self.sign=[-0.5,-0.5,0.5,-0.5,0.5,-0.5,0.5,-0.5,0.5,0.5,0.5,-0.5]
+        self.off= [-0.1,0.25,0.15,0.15,0.25,0.15,0,0.25,0.15,0,0.25,0.15]
 
         # Subscribe to joint command topics
         self.command_topics = [
@@ -65,7 +66,7 @@ class RobotDriverNode:
     def update_servo(self, joint_index, angle):
         """Update the servo position based on joint angle."""
         # print(f"angle received are :{angle}")
-        angle_degrees=self.sign[joint_index]*math.degrees(angle)
+        angle_degrees=self.sign[joint_index]*math.degrees(angle+self.off[joint_index])
         # print(angle_degrees)
         #angle_degrees+=90.0;
         min_pulse = 150

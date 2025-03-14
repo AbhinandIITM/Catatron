@@ -14,8 +14,8 @@ RATE = 60
 rospy.init_node("Robot_Controller")
 
 # Robot geometry
-body = [0.1908, 0.080]
-legs = [0.0, 0.04, 0.100, 0.094333] 
+body = [0.1834, 0.1071]
+legs = [0.0, 0.03559, 0.09996, 0.1] 
 
 notspot_robot = RobotController.Robot(body, legs, USE_IMU)
 inverseKinematics = robot_IK.InverseKinematics(body, legs)

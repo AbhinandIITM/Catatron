@@ -93,7 +93,7 @@ class Robot(object):
             self.command.crawl_event = False
             self.command.stand_event = True
             self.command.rest_event = False
-        elif msg.button[7]:
+        elif msg.buttons[7]:
             if not self.display.blink:
                 self.display.blink = True
                 self.display.eye_control()
