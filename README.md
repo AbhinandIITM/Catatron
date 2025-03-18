@@ -4,7 +4,8 @@
 
 
 ## 3D printed robot <br>
-![tempFileForShare_20250318-112038](https://github.com/user-attachments/assets/a7ca6a13-2a5d-4a5c-bd24-97a7b8d21124) <br>
+<img src="https://github.com/user-attachments/assets/a7ca6a13-2a5d-4a5c-bd24-97a7b8d21124" width="500"/>  <br>
+
 
 ### Trot motion <br>
 ![](https://github.com/AbhinandIITM/Catatron/blob/main/trot.gif) <br>
