@@ -29,12 +29,14 @@ pip install pynput
 ## 🚀 Run the Simulation
 <br>
 🖥️ Terminal 1
+
 ```bash
 cd ~/catatron_ws/
 source install/setup.bash
 ros2 launch catatron_gazebo catatron_gazebo.launch.py
 ```
 🕹️ Terminal 2
+
 ```bash
 cd ~/catatron_ws/
 source install/setup.bash
