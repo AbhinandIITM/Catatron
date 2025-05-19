@@ -26,7 +26,7 @@ colcon build --symlink-install
 sudo apt install pip -y
 pip install pynput 
 ```
-##🚀 Run the Simulation
+## 🚀 Run the Simulation
 <br>
 🖥️ Terminal 1
 ```bash
