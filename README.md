@@ -12,8 +12,10 @@ cd ~/catatron_ws/src
 git clone https://github.com/morg1207/catatron_ros2.git
 
 git checkout catatron_ros2
+```
 
 ## 📦 Install Dependencies and Build
+```bash
 cd ~/catatron_ws
 rosdep init
 sudo apt update
@@ -23,14 +25,17 @@ colcon build --symlink-install
 
 sudo apt install pip -y
 pip install pynput 
-
+```
 ##🚀 Run the Simulation
 🖥️ Terminal 1
+```bash
 cd ~/catatron_ws/
 source install/setup.bash
 ros2 launch catatron_gazebo catatron_gazebo.launch.py
+```
 🕹️ Terminal 2
+```bash
 cd ~/catatron_ws/
 source install/setup.bash
 ros2 run catatron_joystick keyboard_sim_joy
-
+```
