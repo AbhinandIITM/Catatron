@@ -27,6 +27,7 @@ sudo apt install pip -y
 pip install pynput 
 ```
 ##🚀 Run the Simulation
+<br>
 🖥️ Terminal 1
 ```bash
 cd ~/catatron_ws/
