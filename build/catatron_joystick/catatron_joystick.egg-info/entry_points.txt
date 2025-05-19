@@ -1,0 +1,3 @@
+[console_scripts]
+keyboard_sim_joy = catatron_joystick.keyboard_sim_joy:main
+ramped_joystick = catatron_joystick.ramped_joystick:main

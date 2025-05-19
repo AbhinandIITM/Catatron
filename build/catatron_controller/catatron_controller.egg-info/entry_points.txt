@@ -1,0 +1,4 @@
+[console_scripts]
+controller_champ = catatron_controller.controller_champ:main
+controller_quadruped = catatron_controller.controller_quadruped:main
+test_caminata = catatron_controller.test_caminata:main

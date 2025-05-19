@@ -1,0 +1,35 @@
+running egg_info
+writing ../../../build/catatron_controller/catatron_controller.egg-info/PKG-INFO
+writing dependency_links to ../../../build/catatron_controller/catatron_controller.egg-info/dependency_links.txt
+writing entry points to ../../../build/catatron_controller/catatron_controller.egg-info/entry_points.txt
+writing requirements to ../../../build/catatron_controller/catatron_controller.egg-info/requires.txt
+writing top-level names to ../../../build/catatron_controller/catatron_controller.egg-info/top_level.txt
+reading manifest file '../../../build/catatron_controller/catatron_controller.egg-info/SOURCES.txt'
+writing manifest file '../../../build/catatron_controller/catatron_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+copying catatron_controller/controller_quadruped.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller
+copying catatron_controller/controller_champ.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller
+copying catatron_controller/InverseKinematics/robot_IK.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/InverseKinematics
+copying catatron_controller/RobotController/CrawlGaitController.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController
+copying catatron_controller/RobotController/PIDController.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController
+copying catatron_controller/RobotController/StandController.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController
+copying catatron_controller/RobotController/GaitController.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController
+copying catatron_controller/RobotController/RobotController.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController
+copying catatron_controller/RobotController/RestController.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController
+copying catatron_controller/RobotController/TrotGaitController.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController
+copying catatron_controller/RobotController/StateCommand.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController
+copying catatron_controller/RoboticsUtilities/Transformations.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RoboticsUtilities
+running install
+running install_lib
+running install_data
+copying package.xml -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/share/catatron_controller
+copying config/catatron_controller.yaml -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/share/catatron_controller/config
+running install_egg_info
+removing '/home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../../build/catatron_controller/catatron_controller.egg-info to /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller-0.0.0-py3.10.egg-info
+running install_scripts
+Installing controller_champ script to /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/catatron_controller
+Installing controller_quadruped script to /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/catatron_controller
+Installing test_caminata script to /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/catatron_controller
+writing list of installed files to '/home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/install.log'

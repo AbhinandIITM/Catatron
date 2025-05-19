@@ -1,0 +1,50 @@
+[0.176s] Invoking command in '/home/ajoymathew07/Documents/Catatron_ros2/build/catatron_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick:/home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller:/opt/ros/humble /usr/bin/cmake --build /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_description -- -j16 -l16
+[0.339s] Invoked command in '/home/ajoymathew07/Documents/Catatron_ros2/build/catatron_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick:/home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller:/opt/ros/humble /usr/bin/cmake --build /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_description -- -j16 -l16
+[0.348s] Invoking command in '/home/ajoymathew07/Documents/Catatron_ros2/build/catatron_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick:/home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller:/opt/ros/humble /usr/bin/cmake --install /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_description
+[0.356s] -- Install configuration: ""
+[0.356s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//launch
+[0.357s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//launch/rviz_fake_joint.launch.py
+[0.357s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//meshes
+[0.357s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//meshes/FR1_obj.obj
+[0.357s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//meshes/FL1_obj.mtl
+[0.357s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//meshes/thread.jpg
+[0.357s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//meshes/L2_obj.mtl
+[0.357s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//meshes/L3_obj.obj
+[0.357s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//meshes/R3_obj.mtl
+[0.357s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//meshes/body_obj.obj
+[0.357s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//meshes/FR1_obj.mtl
+[0.357s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//meshes/FL1_obj.obj
+[0.357s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//meshes/RR1_obj.obj
+[0.357s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//meshes/RL1_obj.mtl
+[0.357s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//meshes/RL1_obj.obj
+[0.357s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//meshes/RR1_obj.mtl
+[0.358s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//meshes/L2_obj.obj
+[0.358s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//meshes/R2_obj.mtl
+[0.358s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//meshes/R2_obj.obj
+[0.358s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//meshes/L3_obj.mtl
+[0.358s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//meshes/R3_obj.obj
+[0.358s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//meshes/rb1_base_v3.stl
+[0.358s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//meshes/body_obj.mtl
+[0.359s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//rviz
+[0.359s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//rviz/rviz_fake_joints.rviz
+[0.359s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//urdf
+[0.360s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//urdf/xacro
+[0.360s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//urdf/xacro/gazebo.xacro
+[0.360s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//urdf/xacro/transmision.xacro
+[0.360s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description//urdf/catatron.urdf.xacro
+[0.360s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/ament_index/resource_index/package_run_dependencies/catatron_description
+[0.360s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/ament_index/resource_index/parent_prefix_path/catatron_description
+[0.361s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description/environment/ament_prefix_path.sh
+[0.361s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description/environment/ament_prefix_path.dsv
+[0.361s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description/environment/path.sh
+[0.361s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description/environment/path.dsv
+[0.361s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description/local_setup.bash
+[0.361s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description/local_setup.sh
+[0.361s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description/local_setup.zsh
+[0.361s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description/local_setup.dsv
+[0.361s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description/package.dsv
+[0.361s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/ament_index/resource_index/packages/catatron_description
+[0.362s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description/cmake/catatron_descriptionConfig.cmake
+[0.362s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description/cmake/catatron_descriptionConfig-version.cmake
+[0.363s] -- Up-to-date: /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_description/share/catatron_description/package.xml
+[0.363s] Invoked command in '/home/ajoymathew07/Documents/Catatron_ros2/build/catatron_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick:/home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller:/opt/ros/humble /usr/bin/cmake --install /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_description

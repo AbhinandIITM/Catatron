@@ -1,0 +1,85 @@
+running egg_info
+creating ../../../build/catatron_controller/catatron_controller.egg-info
+writing ../../../build/catatron_controller/catatron_controller.egg-info/PKG-INFO
+writing dependency_links to ../../../build/catatron_controller/catatron_controller.egg-info/dependency_links.txt
+writing entry points to ../../../build/catatron_controller/catatron_controller.egg-info/entry_points.txt
+writing requirements to ../../../build/catatron_controller/catatron_controller.egg-info/requires.txt
+writing top-level names to ../../../build/catatron_controller/catatron_controller.egg-info/top_level.txt
+writing manifest file '../../../build/catatron_controller/catatron_controller.egg-info/SOURCES.txt'
+reading manifest file '../../../build/catatron_controller/catatron_controller.egg-info/SOURCES.txt'
+writing manifest file '../../../build/catatron_controller/catatron_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller
+copying catatron_controller/__init__.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller
+copying catatron_controller/controller_quadruped.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller
+copying catatron_controller/controller_champ.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller
+creating /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/InverseKinematics
+copying catatron_controller/InverseKinematics/__init__.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/InverseKinematics
+copying catatron_controller/InverseKinematics/robot_IK.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/InverseKinematics
+creating /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController
+copying catatron_controller/RobotController/CrawlGaitController.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController
+copying catatron_controller/RobotController/PIDController.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController
+copying catatron_controller/RobotController/StandController.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController
+copying catatron_controller/RobotController/__init__.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController
+copying catatron_controller/RobotController/GaitController.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController
+copying catatron_controller/RobotController/RobotController.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController
+copying catatron_controller/RobotController/RestController.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController
+copying catatron_controller/RobotController/TrotGaitController.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController
+copying catatron_controller/RobotController/StateCommand.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController
+creating /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RoboticsUtilities
+copying catatron_controller/RoboticsUtilities/__init__.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RoboticsUtilities
+copying catatron_controller/RoboticsUtilities/Transformations.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RoboticsUtilities
+running install
+running install_lib
+creating /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller
+creating /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/InverseKinematics
+copying /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/InverseKinematics/__init__.py -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/InverseKinematics
+copying /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/InverseKinematics/robot_IK.py -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/InverseKinematics
+copying /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/__init__.py -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller
+creating /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RobotController
+copying /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController/CrawlGaitController.py -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RobotController
+copying /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController/PIDController.py -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RobotController
+copying /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController/StandController.py -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RobotController
+copying /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController/__init__.py -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RobotController
+copying /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController/GaitController.py -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RobotController
+copying /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController/RobotController.py -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RobotController
+copying /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController/RestController.py -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RobotController
+copying /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController/TrotGaitController.py -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RobotController
+copying /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RobotController/StateCommand.py -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RobotController
+creating /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RoboticsUtilities
+copying /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RoboticsUtilities/__init__.py -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RoboticsUtilities
+copying /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/RoboticsUtilities/Transformations.py -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RoboticsUtilities
+copying /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/controller_quadruped.py -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller
+copying /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/build/lib/catatron_controller/controller_champ.py -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller
+byte-compiling /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/InverseKinematics/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/InverseKinematics/robot_IK.py to robot_IK.cpython-310.pyc
+byte-compiling /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RobotController/CrawlGaitController.py to CrawlGaitController.cpython-310.pyc
+byte-compiling /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RobotController/PIDController.py to PIDController.cpython-310.pyc
+byte-compiling /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RobotController/StandController.py to StandController.cpython-310.pyc
+byte-compiling /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RobotController/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RobotController/GaitController.py to GaitController.cpython-310.pyc
+byte-compiling /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RobotController/RobotController.py to RobotController.cpython-310.pyc
+byte-compiling /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RobotController/RestController.py to RestController.cpython-310.pyc
+byte-compiling /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RobotController/TrotGaitController.py to TrotGaitController.cpython-310.pyc
+byte-compiling /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RobotController/StateCommand.py to StateCommand.cpython-310.pyc
+byte-compiling /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RoboticsUtilities/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/RoboticsUtilities/Transformations.py to Transformations.cpython-310.pyc
+byte-compiling /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/controller_quadruped.py to controller_quadruped.cpython-310.pyc
+byte-compiling /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller/controller_champ.py to controller_champ.cpython-310.pyc
+running install_data
+creating /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/share/ament_index/resource_index/packages
+copying resource/catatron_controller -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/share/ament_index/resource_index/packages
+copying package.xml -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/share/catatron_controller
+creating /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/share/catatron_controller/config
+copying config/gazebo.yaml -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/share/catatron_controller/config
+copying config/champ_controller.yaml -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/share/catatron_controller/config
+copying config/catatron_controller.yaml -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/share/catatron_controller/config
+running install_egg_info
+Copying ../../../build/catatron_controller/catatron_controller.egg-info to /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/python3.10/site-packages/catatron_controller-0.0.0-py3.10.egg-info
+running install_scripts
+Installing controller_champ script to /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/catatron_controller
+Installing controller_quadruped script to /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/catatron_controller
+Installing test_caminata script to /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_controller/lib/catatron_controller
+writing list of installed files to '/home/ajoymathew07/Documents/Catatron_ros2/build/catatron_controller/install.log'

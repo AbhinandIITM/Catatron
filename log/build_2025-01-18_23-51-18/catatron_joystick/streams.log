@@ -1,0 +1,24 @@
+[0.827s] Invoking command in '/home/ajoymathew07/Documents/Catatron_ros2/src/catatron_ros2-main/catatron_joystick': PYTHONPATH=/home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/catatron_joystick build --build-base /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/build install --record /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/install.log --single-version-externally-managed install_data
+[1.017s] running egg_info
+[1.030s] writing ../../../build/catatron_joystick/catatron_joystick.egg-info/PKG-INFO
+[1.030s] writing dependency_links to ../../../build/catatron_joystick/catatron_joystick.egg-info/dependency_links.txt
+[1.030s] writing entry points to ../../../build/catatron_joystick/catatron_joystick.egg-info/entry_points.txt
+[1.030s] writing requirements to ../../../build/catatron_joystick/catatron_joystick.egg-info/requires.txt
+[1.031s] writing top-level names to ../../../build/catatron_joystick/catatron_joystick.egg-info/top_level.txt
+[1.058s] reading manifest file '../../../build/catatron_joystick/catatron_joystick.egg-info/SOURCES.txt'
+[1.059s] writing manifest file '../../../build/catatron_joystick/catatron_joystick.egg-info/SOURCES.txt'
+[1.059s] running build
+[1.059s] running build_py
+[1.059s] copying catatron_joystick/ramped_joystick.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/build/lib/catatron_joystick
+[1.059s] running install
+[1.063s] running install_lib
+[1.076s] running install_data
+[1.077s] copying package.xml -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/share/catatron_joystick
+[1.077s] running install_egg_info
+[1.091s] removing '/home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/python3.10/site-packages/catatron_joystick-0.0.0-py3.10.egg-info' (and everything under it)
+[1.091s] Copying ../../../build/catatron_joystick/catatron_joystick.egg-info to /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/python3.10/site-packages/catatron_joystick-0.0.0-py3.10.egg-info
+[1.092s] running install_scripts
+[1.203s] Installing keyboard_sim_joy script to /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/catatron_joystick
+[1.204s] Installing ramped_joystick script to /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/catatron_joystick
+[1.204s] writing list of installed files to '/home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/install.log'
+[1.227s] Invoked command in '/home/ajoymathew07/Documents/Catatron_ros2/src/catatron_ros2-main/catatron_joystick' returned '0': PYTHONPATH=/home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/catatron_joystick build --build-base /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/build install --record /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/install.log --single-version-externally-managed install_data

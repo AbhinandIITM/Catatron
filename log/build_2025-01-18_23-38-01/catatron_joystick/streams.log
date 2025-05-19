@@ -1,0 +1,37 @@
+[0.841s] Invoking command in '/home/ajoymathew07/Documents/Catatron_ros2/src/catatron_ros2-main/catatron_joystick': PYTHONPATH=/home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/catatron_joystick build --build-base /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/build install --record /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/install.log --single-version-externally-managed install_data
+[1.032s] running egg_info
+[1.045s] creating ../../../build/catatron_joystick/catatron_joystick.egg-info
+[1.045s] writing ../../../build/catatron_joystick/catatron_joystick.egg-info/PKG-INFO
+[1.046s] writing dependency_links to ../../../build/catatron_joystick/catatron_joystick.egg-info/dependency_links.txt
+[1.046s] writing entry points to ../../../build/catatron_joystick/catatron_joystick.egg-info/entry_points.txt
+[1.046s] writing requirements to ../../../build/catatron_joystick/catatron_joystick.egg-info/requires.txt
+[1.046s] writing top-level names to ../../../build/catatron_joystick/catatron_joystick.egg-info/top_level.txt
+[1.046s] writing manifest file '../../../build/catatron_joystick/catatron_joystick.egg-info/SOURCES.txt'
+[1.074s] reading manifest file '../../../build/catatron_joystick/catatron_joystick.egg-info/SOURCES.txt'
+[1.075s] writing manifest file '../../../build/catatron_joystick/catatron_joystick.egg-info/SOURCES.txt'
+[1.076s] running build
+[1.076s] running build_py
+[1.076s] creating /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/build/lib/catatron_joystick
+[1.076s] copying catatron_joystick/keyboard_sim_joy.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/build/lib/catatron_joystick
+[1.076s] copying catatron_joystick/ramped_joystick.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/build/lib/catatron_joystick
+[1.076s] copying catatron_joystick/__init__.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/build/lib/catatron_joystick
+[1.077s] running install
+[1.080s] running install_lib
+[1.093s] creating /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/python3.10/site-packages/catatron_joystick
+[1.094s] copying /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/build/lib/catatron_joystick/keyboard_sim_joy.py -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/python3.10/site-packages/catatron_joystick
+[1.094s] copying /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/build/lib/catatron_joystick/ramped_joystick.py -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/python3.10/site-packages/catatron_joystick
+[1.094s] copying /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/build/lib/catatron_joystick/__init__.py -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/python3.10/site-packages/catatron_joystick
+[1.094s] byte-compiling /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/python3.10/site-packages/catatron_joystick/keyboard_sim_joy.py to keyboard_sim_joy.cpython-310.pyc
+[1.095s] byte-compiling /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/python3.10/site-packages/catatron_joystick/ramped_joystick.py to ramped_joystick.cpython-310.pyc
+[1.096s] byte-compiling /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/python3.10/site-packages/catatron_joystick/__init__.py to __init__.cpython-310.pyc
+[1.096s] running install_data
+[1.096s] creating /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/share/ament_index/resource_index/packages
+[1.096s] copying resource/catatron_joystick -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/share/ament_index/resource_index/packages
+[1.096s] copying package.xml -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/share/catatron_joystick
+[1.096s] running install_egg_info
+[1.111s] Copying ../../../build/catatron_joystick/catatron_joystick.egg-info to /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/python3.10/site-packages/catatron_joystick-0.0.0-py3.10.egg-info
+[1.112s] running install_scripts
+[1.225s] Installing keyboard_sim_joy script to /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/catatron_joystick
+[1.225s] Installing ramped_joystick script to /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/catatron_joystick
+[1.225s] writing list of installed files to '/home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/install.log'
+[1.257s] Invoked command in '/home/ajoymathew07/Documents/Catatron_ros2/src/catatron_ros2-main/catatron_joystick' returned '0': PYTHONPATH=/home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/catatron_joystick build --build-base /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/build install --record /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/install.log --single-version-externally-managed install_data

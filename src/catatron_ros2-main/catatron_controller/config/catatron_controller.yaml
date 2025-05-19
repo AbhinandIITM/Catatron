@@ -1,0 +1,61 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 1000  # Hz
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    joint_group_effort_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+      
+joint_group_effort_controller:
+  ros__parameters:
+    use_sim_time: True
+    joints:
+      - FL1_joint
+      - FL2_joint
+      - FL3_joint
+      - FR1_joint
+      - FR2_joint
+      - FR3_joint
+      - RR1_joint
+      - RR2_joint
+      - RR3_joint
+      - RL1_joint
+      - RL2_joint
+      - RL3_joint
+    command_interfaces:
+
+      - effort
+    state_interfaces:
+      - position
+      - velocity
+    open_loop_control: False
+    allow_nonzero_velocity_at_trajectory_end: False
+
+    gains:
+   
+      FL1_joint: {p: 59.0, d: 0.1055, i: 0.23, i_clamp: 2.5, ff_velocity_scale: 0.1}
+      FL2_joint: {p: 59.0, d: 0.1055, i: 0.23, i_clamp: 2.5, ff_velocity_scale: 0.1}
+      FL3_joint: {p: 59.0, d: 0.1055, i: 0.23, i_clamp: 2.5, ff_velocity_scale: 0.1}
+      FR1_joint: {p: 59.0, d: 0.1055, i: 0.23, i_clamp: 2.5, ff_velocity_scale: 0.1}
+      FR2_joint: {p: 59.0, d: 0.1055, i: 0.23, i_clamp: 2.5, ff_velocity_scale: 0.1}
+      FR3_joint: {p: 59.0, d: 0.1055, i: 0.23, i_clamp: 2.5, ff_velocity_scale: 0.1}
+      RR1_joint: {p: 59.0, d: 0.1055, i: 0.23, i_clamp: 2.5, ff_velocity_scale: 0.1}
+      RR2_joint: {p: 59.0, d: 0.1055, i: 0.23, i_clamp: 2.5, ff_velocity_scale: 0.1}
+      RR3_joint: {p: 59.0, d: 0.1055, i: 0.23, i_clamp: 2.5, ff_velocity_scale: 0.1}
+      RL1_joint: {p: 59.0, d: 0.1055, i: 0.23, i_clamp: 2.5, ff_velocity_scale: 0.1}
+      RL2_joint: {p: 59.0, d: 0.1055, i: 0.23, i_clamp: 2.5, ff_velocity_scale: 0.1}
+      RL3_joint: {p: 59.0, d: 0.1055, i: 0.23, i_clamp: 2.5, ff_velocity_scale: 0.1}
+      #FL1_joint: {p: 100.0, i: 0.2, d: 1.0, i_clamp: 2.5}
+      #FL2_joint: {p: 100.0, i: 0.2, d: 1.0, i_clamp: 2.5}
+      #FL3_joint: {p: 100.0, i: 0.2, d: 1.0, i_clamp: 2.5}
+      #FR1_joint: {p: 100.0, i: 0.2, d: 1.0, i_clamp: 2.5}
+      #FR2_joint: {p: 100.0, i: 0.2, d: 1.0, i_clamp: 2.5}
+      #FR3_joint: {p: 100.0, i: 0.2, d: 1.0, i_clamp: 2.5}
+      #RR1_joint: {p: 100.0, i: 0.2, d: 1.0, i_clamp: 2.5}
+      #RR2_joint: {p: 100.0, i: 0.2, d: 1.0, i_clamp: 2.5}
+      #RR3_joint: {p: 100.0, i: 0.2, d: 1.0, i_clamp: 2.5}
+      #RL1_joint: {p: 100.0, i: 0.2, d: 1.0, i_clamp: 2.5}
+      #RL2_joint: {p: 100.0, i: 0.2, d: 1.0, i_clamp: 2.5}
+      #RL3_joint: {p: 100.0, i: 0.2, d: 1.0, i_clamp: 2.5}

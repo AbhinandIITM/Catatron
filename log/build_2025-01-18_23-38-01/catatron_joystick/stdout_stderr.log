@@ -1,0 +1,35 @@
+running egg_info
+creating ../../../build/catatron_joystick/catatron_joystick.egg-info
+writing ../../../build/catatron_joystick/catatron_joystick.egg-info/PKG-INFO
+writing dependency_links to ../../../build/catatron_joystick/catatron_joystick.egg-info/dependency_links.txt
+writing entry points to ../../../build/catatron_joystick/catatron_joystick.egg-info/entry_points.txt
+writing requirements to ../../../build/catatron_joystick/catatron_joystick.egg-info/requires.txt
+writing top-level names to ../../../build/catatron_joystick/catatron_joystick.egg-info/top_level.txt
+writing manifest file '../../../build/catatron_joystick/catatron_joystick.egg-info/SOURCES.txt'
+reading manifest file '../../../build/catatron_joystick/catatron_joystick.egg-info/SOURCES.txt'
+writing manifest file '../../../build/catatron_joystick/catatron_joystick.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/build/lib/catatron_joystick
+copying catatron_joystick/keyboard_sim_joy.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/build/lib/catatron_joystick
+copying catatron_joystick/ramped_joystick.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/build/lib/catatron_joystick
+copying catatron_joystick/__init__.py -> /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/build/lib/catatron_joystick
+running install
+running install_lib
+creating /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/python3.10/site-packages/catatron_joystick
+copying /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/build/lib/catatron_joystick/keyboard_sim_joy.py -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/python3.10/site-packages/catatron_joystick
+copying /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/build/lib/catatron_joystick/ramped_joystick.py -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/python3.10/site-packages/catatron_joystick
+copying /home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/build/lib/catatron_joystick/__init__.py -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/python3.10/site-packages/catatron_joystick
+byte-compiling /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/python3.10/site-packages/catatron_joystick/keyboard_sim_joy.py to keyboard_sim_joy.cpython-310.pyc
+byte-compiling /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/python3.10/site-packages/catatron_joystick/ramped_joystick.py to ramped_joystick.cpython-310.pyc
+byte-compiling /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/python3.10/site-packages/catatron_joystick/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/share/ament_index/resource_index/packages
+copying resource/catatron_joystick -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/share/ament_index/resource_index/packages
+copying package.xml -> /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/share/catatron_joystick
+running install_egg_info
+Copying ../../../build/catatron_joystick/catatron_joystick.egg-info to /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/python3.10/site-packages/catatron_joystick-0.0.0-py3.10.egg-info
+running install_scripts
+Installing keyboard_sim_joy script to /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/catatron_joystick
+Installing ramped_joystick script to /home/ajoymathew07/Documents/Catatron_ros2/install/catatron_joystick/lib/catatron_joystick
+writing list of installed files to '/home/ajoymathew07/Documents/Catatron_ros2/build/catatron_joystick/install.log'

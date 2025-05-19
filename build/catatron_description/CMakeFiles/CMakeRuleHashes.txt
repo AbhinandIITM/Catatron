@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+a4c8427a9d05e5d7ccf330055978b7cc CMakeFiles/catatron_description_uninstall
