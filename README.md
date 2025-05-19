@@ -1,14 +1,36 @@
-## Gazebo Simulation <br>
+# Catatron ROS 2 Simulation
 
-![image](https://github.com/user-attachments/assets/f2f8f649-9c1d-4a15-9fcf-f476449d6451) <br>
+This repository contains the ROS 2 packages for simulating and controlling the Catatron quadruped robot in Gazebo. It is compatible with ROS 2 Humble.
 
+---
 
-## 3D printed robot <br>
-<img src="https://github.com/user-attachments/assets/a7ca6a13-2a5d-4a5c-bd24-97a7b8d21124" width="500"/>  <br>
+## 📁 Workspace Setup
 
+```bash
+mkdir -p ~/catatron_ws/src
+cd ~/catatron_ws/src
+git clone https://github.com/morg1207/catatron_ros2.git
 
-### Trot motion <br>
-![](https://github.com/AbhinandIITM/Catatron/blob/main/trot.gif) <br>
+git checkout catatron_ros2
 
+## 📦 Install Dependencies and Build
+cd ~/catatron_ws
+rosdep init
+sudo apt update
+rosdep update --rosdistro $ROS_DISTRO
+rosdep install -i --from-path src --rosdistro $ROS_DISTRO -y
+colcon build --symlink-install
 
+sudo apt install pip -y
+pip install pynput 
+
+##🚀 Run the Simulation
+🖥️ Terminal 1
+cd ~/catatron_ws/
+source install/setup.bash
+ros2 launch catatron_gazebo catatron_gazebo.launch.py
+🕹️ Terminal 2
+cd ~/catatron_ws/
+source install/setup.bash
+ros2 run catatron_joystick keyboard_sim_joy
 
