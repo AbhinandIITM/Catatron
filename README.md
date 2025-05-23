@@ -42,3 +42,24 @@ cd ~/catatron_ws/
 source install/setup.bash
 ros2 run catatron_joystick keyboard_sim_joy
 ```
+
+# Citations and References
+@misc{notspot_sim_py,
+  author       = {lnotspotl},
+  title        = {Notspot Robot Simulation - Python Version},
+  year         = {2021},
+  publisher    = {GitHub},
+  howpublished = {\url{https://github.com/lnotspotl/notspot_sim_py}},
+  note         = {Accessed: 2025-05-23}
+}
+
+@misc{pavlov_mini,
+  author       = {Andres},
+  title        = {pavlov\_mini},
+  year         = {2021},
+  publisher    = {GitLab},
+  howpublished = {\url{https://gitlab.com/anflores/pavlov_mini}},
+  note         = {Accessed: 2025-05-23}
+}
+
+
