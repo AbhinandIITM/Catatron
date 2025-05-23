@@ -44,13 +44,7 @@ ros2 run catatron_joystick keyboard_sim_joy
 ```
 
 # 📚 Citations and References
----
 
-### 🔹 Notspot Robot Simulation - Python Version
-- **Author**: lnotspotl  
-- **Repository**: [GitHub - notspot_sim_py](https://github.com/lnotspotl/notspot_sim_py)  
-- **Year**: 2021  
-- **BibTeX**:
   ```
   @misc{notspot_sim_py,
     author       = {lnotspotl},
@@ -60,12 +54,6 @@ ros2 run catatron_joystick keyboard_sim_joy
     howpublished = {\url{https://github.com/lnotspotl/notspot_sim_py}}
   }
 
-  
-- **Author**: Andres
-- **Repository**: [GitLab](https://gitlab.com/anflores/pavlov_mini)  
-- **Year**: 2021  
-- **BibTeX**:
-  ```
   @misc{pavlov_mini,
     author       = {Andres},
     title        = {pavlov_mini},
@@ -73,4 +61,5 @@ ros2 run catatron_joystick keyboard_sim_joy
     publisher    = {GitHub},
     howpublished = {\url{https://gitlab.com/anflores/pavlov_mini}}
   }
+```
 
