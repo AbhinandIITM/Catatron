@@ -5,5 +5,5 @@
     "python.analysis.extraPaths": [
         "/opt/ros/noetic/lib/python3/dist-packages"
     ],
-    "cmake.sourceDirectory": "/home/sudharsan/Documents/drive/Catatron_notspot/src/notspot"
+    "cmake.sourceDirectory": "/home/ajoymathew07/Documents/Catatron/src/catatron"
 }

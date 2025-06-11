@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sudharsan/Documents/drive/Catatron_notspot/src
+CMAKE_SOURCE_DIR = /home/sudharsan/Documents/drive/Catatron_catatron/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sudharsan/Documents/drive/Catatron_notspot/build
+CMAKE_BINARY_DIR = /home/sudharsan/Documents/drive/Catatron_catatron/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sudharsan/Documents/drive/Catatron_notspot/build/CMakeFiles /home/sudharsan/Documents/drive/Catatron_notspot/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sudharsan/Documents/drive/Catatron_catatron/build/CMakeFiles /home/sudharsan/Documents/drive/Catatron_catatron/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sudharsan/Documents/drive/Catatron_notspot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sudharsan/Documents/drive/Catatron_catatron/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -294,7 +294,7 @@ _catkin_empty_exported_target: cmake_check_build_system
 
 # fast build rule for target.
 _catkin_empty_exported_target/fast:
-	$(MAKE) -f notspot_description/CMakeFiles/_catkin_empty_exported_target.dir/build.make notspot_description/CMakeFiles/_catkin_empty_exported_target.dir/build
+	$(MAKE) -f catatron_description/CMakeFiles/_catkin_empty_exported_target.dir/build.make catatron_description/CMakeFiles/_catkin_empty_exported_target.dir/build
 .PHONY : _catkin_empty_exported_target/fast
 
 #=============================================================================
@@ -307,7 +307,7 @@ std_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f notspot_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make notspot_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f catatron_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make catatron_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -320,7 +320,7 @@ std_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	$(MAKE) -f notspot_controller/CMakeFiles/std_msgs_generate_messages_py.dir/build.make notspot_controller/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(MAKE) -f catatron_controller/CMakeFiles/std_msgs_generate_messages_py.dir/build.make catatron_controller/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -333,7 +333,7 @@ sensor_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f notspot_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make notspot_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f catatron_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make catatron_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -346,7 +346,7 @@ std_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f notspot_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make notspot_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f catatron_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make catatron_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -359,7 +359,7 @@ sensor_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_eus/fast:
-	$(MAKE) -f notspot_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make notspot_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f catatron_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make catatron_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -372,7 +372,7 @@ geometry_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_eus/fast:
-	$(MAKE) -f notspot_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make notspot_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f catatron_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make catatron_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -385,7 +385,7 @@ std_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	$(MAKE) -f notspot_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make notspot_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f catatron_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make catatron_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -398,7 +398,7 @@ geometry_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f notspot_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make notspot_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f catatron_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make catatron_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -411,7 +411,7 @@ sensor_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f notspot_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make notspot_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f catatron_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make catatron_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -424,7 +424,7 @@ sensor_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f notspot_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make notspot_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f catatron_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make catatron_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
 .PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -437,7 +437,7 @@ geometry_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_py/fast:
-	$(MAKE) -f notspot_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make notspot_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+	$(MAKE) -f catatron_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make catatron_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -450,7 +450,7 @@ sensor_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_py/fast:
-	$(MAKE) -f notspot_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make notspot_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	$(MAKE) -f catatron_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make catatron_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -463,7 +463,7 @@ geometry_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f notspot_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make notspot_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f catatron_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make catatron_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -476,7 +476,7 @@ geometry_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f notspot_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make notspot_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f catatron_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make catatron_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
 .PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -489,7 +489,7 @@ std_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f notspot_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make notspot_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f catatron_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make catatron_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 # Help Target

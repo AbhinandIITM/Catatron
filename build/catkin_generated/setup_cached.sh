@@ -8,5 +8,5 @@
 
 # modified environment variables
 export LD_LIBRARY_PATH='/opt/ros/noetic/lib'
-export PWD='/home/sudharsan/Documents/drive/Catatron_notspot/build'
-export ROS_PACKAGE_PATH='/home/sudharsan/Documents/drive/Catatron_notspot/src:/opt/ros/noetic/share'
+export PWD='/home/sudharsan/Documents/drive/Catatron_catatron/build'
+export ROS_PACKAGE_PATH='/home/sudharsan/Documents/drive/Catatron_catatron/src:/opt/ros/noetic/share'

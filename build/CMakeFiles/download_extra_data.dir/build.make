@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sudharsan/Documents/drive/Catatron_notspot/src
+CMAKE_SOURCE_DIR = /home/sudharsan/Documents/drive/Catatron_catatron/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sudharsan/Documents/drive/Catatron_notspot/build
+CMAKE_BINARY_DIR = /home/sudharsan/Documents/drive/Catatron_catatron/build
 
 # Utility rule file for download_extra_data.
 
@@ -67,6 +67,6 @@ CMakeFiles/download_extra_data.dir/clean:
 .PHONY : CMakeFiles/download_extra_data.dir/clean
 
 CMakeFiles/download_extra_data.dir/depend:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sudharsan/Documents/drive/Catatron_notspot/src /home/sudharsan/Documents/drive/Catatron_notspot/src /home/sudharsan/Documents/drive/Catatron_notspot/build /home/sudharsan/Documents/drive/Catatron_notspot/build /home/sudharsan/Documents/drive/Catatron_notspot/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sudharsan/Documents/drive/Catatron_catatron/src /home/sudharsan/Documents/drive/Catatron_catatron/src /home/sudharsan/Documents/drive/Catatron_catatron/build /home/sudharsan/Documents/drive/Catatron_catatron/build /home/sudharsan/Documents/drive/Catatron_catatron/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/download_extra_data.dir/depend
 

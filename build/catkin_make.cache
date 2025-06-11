@@ -1,2 +1,2 @@
-notspot:notspot_controller:notspot_description:notspot_gazebo:notspot_joystick
--DCATKIN_DEVEL_PREFIX=/home/sudharsan/Documents/drive/Catatron_notspot/devel -DCMAKE_INSTALL_PREFIX=/home/sudharsan/Documents/drive/Catatron_notspot/install -G Unix Makefiles
+catatron:catatron_controller:catatron_description:catatron_gazebo:catatron_joystick
+-DCATKIN_DEVEL_PREFIX=/home/sudharsan/Documents/drive/Catatron_catatron/devel -DCMAKE_INSTALL_PREFIX=/home/sudharsan/Documents/drive/Catatron_catatron/install -G Unix Makefiles

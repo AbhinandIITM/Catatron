@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>catatron_joystick</name>
+  <version>1.0.0</version>
+  <description>The catatron_joystick package</description>
+
+  <maintainer email="lcatatronl@gmail.com">lcatatronl</maintainer>
+
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>rospy</build_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+
+</package>

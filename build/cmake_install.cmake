@@ -1,8 +1,8 @@
-# Install script for directory: /home/sudharsan/Documents/drive/Catatron_notspot/src
+# Install script for directory: /home/sudharsan/Documents/drive/Catatron_catatron/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/sudharsan/Documents/drive/Catatron_notspot/install")
+  set(CMAKE_INSTALL_PREFIX "/home/sudharsan/Documents/drive/Catatron_catatron/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,93 +49,93 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/sudharsan/Documents/drive/Catatron_notspot/install/_setup_util.py")
+   "/home/sudharsan/Documents/drive/Catatron_catatron/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/sudharsan/Documents/drive/Catatron_notspot/install" TYPE PROGRAM FILES "/home/sudharsan/Documents/drive/Catatron_notspot/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/sudharsan/Documents/drive/Catatron_catatron/install" TYPE PROGRAM FILES "/home/sudharsan/Documents/drive/Catatron_catatron/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/sudharsan/Documents/drive/Catatron_notspot/install/env.sh")
+   "/home/sudharsan/Documents/drive/Catatron_catatron/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/sudharsan/Documents/drive/Catatron_notspot/install" TYPE PROGRAM FILES "/home/sudharsan/Documents/drive/Catatron_notspot/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/sudharsan/Documents/drive/Catatron_catatron/install" TYPE PROGRAM FILES "/home/sudharsan/Documents/drive/Catatron_catatron/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/sudharsan/Documents/drive/Catatron_notspot/install/setup.bash;/home/sudharsan/Documents/drive/Catatron_notspot/install/local_setup.bash")
+   "/home/sudharsan/Documents/drive/Catatron_catatron/install/setup.bash;/home/sudharsan/Documents/drive/Catatron_catatron/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/sudharsan/Documents/drive/Catatron_notspot/install" TYPE FILE FILES
-    "/home/sudharsan/Documents/drive/Catatron_notspot/build/catkin_generated/installspace/setup.bash"
-    "/home/sudharsan/Documents/drive/Catatron_notspot/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/sudharsan/Documents/drive/Catatron_catatron/install" TYPE FILE FILES
+    "/home/sudharsan/Documents/drive/Catatron_catatron/build/catkin_generated/installspace/setup.bash"
+    "/home/sudharsan/Documents/drive/Catatron_catatron/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/sudharsan/Documents/drive/Catatron_notspot/install/setup.sh;/home/sudharsan/Documents/drive/Catatron_notspot/install/local_setup.sh")
+   "/home/sudharsan/Documents/drive/Catatron_catatron/install/setup.sh;/home/sudharsan/Documents/drive/Catatron_catatron/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/sudharsan/Documents/drive/Catatron_notspot/install" TYPE FILE FILES
-    "/home/sudharsan/Documents/drive/Catatron_notspot/build/catkin_generated/installspace/setup.sh"
-    "/home/sudharsan/Documents/drive/Catatron_notspot/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/sudharsan/Documents/drive/Catatron_catatron/install" TYPE FILE FILES
+    "/home/sudharsan/Documents/drive/Catatron_catatron/build/catkin_generated/installspace/setup.sh"
+    "/home/sudharsan/Documents/drive/Catatron_catatron/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/sudharsan/Documents/drive/Catatron_notspot/install/setup.zsh;/home/sudharsan/Documents/drive/Catatron_notspot/install/local_setup.zsh")
+   "/home/sudharsan/Documents/drive/Catatron_catatron/install/setup.zsh;/home/sudharsan/Documents/drive/Catatron_catatron/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/sudharsan/Documents/drive/Catatron_notspot/install" TYPE FILE FILES
-    "/home/sudharsan/Documents/drive/Catatron_notspot/build/catkin_generated/installspace/setup.zsh"
-    "/home/sudharsan/Documents/drive/Catatron_notspot/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/sudharsan/Documents/drive/Catatron_catatron/install" TYPE FILE FILES
+    "/home/sudharsan/Documents/drive/Catatron_catatron/build/catkin_generated/installspace/setup.zsh"
+    "/home/sudharsan/Documents/drive/Catatron_catatron/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/sudharsan/Documents/drive/Catatron_notspot/install/.rosinstall")
+   "/home/sudharsan/Documents/drive/Catatron_catatron/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/sudharsan/Documents/drive/Catatron_notspot/install" TYPE FILE FILES "/home/sudharsan/Documents/drive/Catatron_notspot/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/sudharsan/Documents/drive/Catatron_catatron/install" TYPE FILE FILES "/home/sudharsan/Documents/drive/Catatron_catatron/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/sudharsan/Documents/drive/Catatron_notspot/build/gtest/cmake_install.cmake")
-  include("/home/sudharsan/Documents/drive/Catatron_notspot/build/notspot_description/cmake_install.cmake")
-  include("/home/sudharsan/Documents/drive/Catatron_notspot/build/notspot_gazebo/cmake_install.cmake")
-  include("/home/sudharsan/Documents/drive/Catatron_notspot/build/notspot/cmake_install.cmake")
-  include("/home/sudharsan/Documents/drive/Catatron_notspot/build/notspot_controller/cmake_install.cmake")
-  include("/home/sudharsan/Documents/drive/Catatron_notspot/build/notspot_joystick/cmake_install.cmake")
+  include("/home/sudharsan/Documents/drive/Catatron_catatron/build/gtest/cmake_install.cmake")
+  include("/home/sudharsan/Documents/drive/Catatron_catatron/build/catatron_description/cmake_install.cmake")
+  include("/home/sudharsan/Documents/drive/Catatron_catatron/build/catatron_gazebo/cmake_install.cmake")
+  include("/home/sudharsan/Documents/drive/Catatron_catatron/build/catatron/cmake_install.cmake")
+  include("/home/sudharsan/Documents/drive/Catatron_catatron/build/catatron_controller/cmake_install.cmake")
+  include("/home/sudharsan/Documents/drive/Catatron_catatron/build/catatron_joystick/cmake_install.cmake")
 
 endif()
 
@@ -147,5 +147,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/sudharsan/Documents/drive/Catatron_notspot/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sudharsan/Documents/drive/Catatron_catatron/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

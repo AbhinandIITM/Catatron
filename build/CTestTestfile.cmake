@@ -1,12 +1,12 @@
 # CMake generated Testfile for 
-# Source directory: /home/sudharsan/Documents/drive/Catatron_notspot/src
-# Build directory: /home/sudharsan/Documents/drive/Catatron_notspot/build
+# Source directory: /home/sudharsan/Documents/drive/Catatron_catatron/src
+# Build directory: /home/sudharsan/Documents/drive/Catatron_catatron/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
-subdirs("notspot_description")
-subdirs("notspot_gazebo")
-subdirs("notspot")
-subdirs("notspot_controller")
-subdirs("notspot_joystick")
+subdirs("catatron_description")
+subdirs("catatron_gazebo")
+subdirs("catatron")
+subdirs("catatron_controller")
+subdirs("catatron_joystick")

@@ -1,8 +1,8 @@
-# Install script for directory: /home/sudharsan/Documents/drive/Catatron_notspot/src/notspot_controller
+# Install script for directory: /home/sudharsan/Documents/drive/Catatron_catatron/src/catatron_controller
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/sudharsan/Documents/drive/Catatron_notspot/install")
+  set(CMAKE_INSTALL_PREFIX "/home/sudharsan/Documents/drive/Catatron_catatron/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

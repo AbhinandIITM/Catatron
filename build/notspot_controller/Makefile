@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sudharsan/Documents/drive/Catatron_notspot/src
+CMAKE_SOURCE_DIR = /home/sudharsan/Documents/drive/Catatron_catatron/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sudharsan/Documents/drive/Catatron_notspot/build
+CMAKE_BINARY_DIR = /home/sudharsan/Documents/drive/Catatron_catatron/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sudharsan/Documents/drive/Catatron_notspot/build/CMakeFiles /home/sudharsan/Documents/drive/Catatron_notspot/build/notspot_controller/CMakeFiles/progress.marks
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f CMakeFiles/Makefile2 notspot_controller/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sudharsan/Documents/drive/Catatron_notspot/build/CMakeFiles 0
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sudharsan/Documents/drive/Catatron_catatron/build/CMakeFiles /home/sudharsan/Documents/drive/Catatron_catatron/build/catatron_controller/CMakeFiles/progress.marks
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f CMakeFiles/Makefile2 catatron_controller/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sudharsan/Documents/drive/Catatron_catatron/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f CMakeFiles/Makefile2 notspot_controller/clean
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f CMakeFiles/Makefile2 catatron_controller/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,242 +154,242 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f CMakeFiles/Makefile2 notspot_controller/preinstall
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f CMakeFiles/Makefile2 catatron_controller/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f CMakeFiles/Makefile2 notspot_controller/preinstall
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f CMakeFiles/Makefile2 catatron_controller/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-notspot_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f CMakeFiles/Makefile2 notspot_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-.PHONY : notspot_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+catatron_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f CMakeFiles/Makefile2 catatron_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+.PHONY : catatron_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_nodejs: notspot_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+std_msgs_generate_messages_nodejs: catatron_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 .PHONY : std_msgs_generate_messages_nodejs
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f notspot_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make notspot_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f catatron_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make catatron_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-notspot_controller/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f CMakeFiles/Makefile2 notspot_controller/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : notspot_controller/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+catatron_controller/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f CMakeFiles/Makefile2 catatron_controller/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : catatron_controller/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_py: notspot_controller/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+std_msgs_generate_messages_py: catatron_controller/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 .PHONY : std_msgs_generate_messages_py
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f notspot_controller/CMakeFiles/std_msgs_generate_messages_py.dir/build.make notspot_controller/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f catatron_controller/CMakeFiles/std_msgs_generate_messages_py.dir/build.make catatron_controller/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-notspot_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f CMakeFiles/Makefile2 notspot_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-.PHONY : notspot_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+catatron_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f CMakeFiles/Makefile2 catatron_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : catatron_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_cpp: notspot_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+sensor_msgs_generate_messages_cpp: catatron_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 .PHONY : sensor_msgs_generate_messages_cpp
 
 # fast build rule for target.
 sensor_msgs_generate_messages_cpp/fast:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f notspot_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make notspot_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f catatron_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make catatron_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
-notspot_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f CMakeFiles/Makefile2 notspot_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : notspot_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+catatron_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f CMakeFiles/Makefile2 catatron_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : catatron_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_lisp: notspot_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+std_msgs_generate_messages_lisp: catatron_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 .PHONY : std_msgs_generate_messages_lisp
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f notspot_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make notspot_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f catatron_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make catatron_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-notspot_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f CMakeFiles/Makefile2 notspot_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-.PHONY : notspot_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+catatron_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f CMakeFiles/Makefile2 catatron_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+.PHONY : catatron_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_eus: notspot_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+sensor_msgs_generate_messages_eus: catatron_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 
 .PHONY : sensor_msgs_generate_messages_eus
 
 # fast build rule for target.
 sensor_msgs_generate_messages_eus/fast:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f notspot_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make notspot_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f catatron_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make catatron_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-notspot_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f CMakeFiles/Makefile2 notspot_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-.PHONY : notspot_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+catatron_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f CMakeFiles/Makefile2 catatron_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+.PHONY : catatron_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_eus: notspot_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+geometry_msgs_generate_messages_eus: catatron_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 .PHONY : geometry_msgs_generate_messages_eus
 
 # fast build rule for target.
 geometry_msgs_generate_messages_eus/fast:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f notspot_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make notspot_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f catatron_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make catatron_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-notspot_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f CMakeFiles/Makefile2 notspot_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : notspot_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+catatron_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f CMakeFiles/Makefile2 catatron_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+.PHONY : catatron_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_eus: notspot_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+std_msgs_generate_messages_eus: catatron_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 .PHONY : std_msgs_generate_messages_eus
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f notspot_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make notspot_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f catatron_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make catatron_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-notspot_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f CMakeFiles/Makefile2 notspot_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-.PHONY : notspot_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+catatron_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f CMakeFiles/Makefile2 catatron_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : catatron_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_lisp: notspot_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+geometry_msgs_generate_messages_lisp: catatron_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 .PHONY : geometry_msgs_generate_messages_lisp
 
 # fast build rule for target.
 geometry_msgs_generate_messages_lisp/fast:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f notspot_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make notspot_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f catatron_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make catatron_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-notspot_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f CMakeFiles/Makefile2 notspot_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : notspot_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+catatron_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f CMakeFiles/Makefile2 catatron_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : catatron_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_lisp: notspot_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+sensor_msgs_generate_messages_lisp: catatron_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 .PHONY : sensor_msgs_generate_messages_lisp
 
 # fast build rule for target.
 sensor_msgs_generate_messages_lisp/fast:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f notspot_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make notspot_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f catatron_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make catatron_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-notspot_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f CMakeFiles/Makefile2 notspot_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-.PHONY : notspot_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+catatron_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f CMakeFiles/Makefile2 catatron_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+.PHONY : catatron_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_nodejs: notspot_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+sensor_msgs_generate_messages_nodejs: catatron_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
 .PHONY : sensor_msgs_generate_messages_nodejs
 
 # fast build rule for target.
 sensor_msgs_generate_messages_nodejs/fast:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f notspot_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make notspot_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f catatron_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make catatron_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
 .PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-notspot_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f CMakeFiles/Makefile2 notspot_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-.PHONY : notspot_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+catatron_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f CMakeFiles/Makefile2 catatron_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : catatron_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_py: notspot_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+geometry_msgs_generate_messages_py: catatron_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 .PHONY : geometry_msgs_generate_messages_py
 
 # fast build rule for target.
 geometry_msgs_generate_messages_py/fast:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f notspot_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make notspot_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f catatron_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make catatron_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-notspot_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f CMakeFiles/Makefile2 notspot_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : notspot_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+catatron_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f CMakeFiles/Makefile2 catatron_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : catatron_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_py: notspot_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+sensor_msgs_generate_messages_py: catatron_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 .PHONY : sensor_msgs_generate_messages_py
 
 # fast build rule for target.
 sensor_msgs_generate_messages_py/fast:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f notspot_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make notspot_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f catatron_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make catatron_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-notspot_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f CMakeFiles/Makefile2 notspot_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-.PHONY : notspot_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+catatron_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f CMakeFiles/Makefile2 catatron_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : catatron_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_cpp: notspot_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+geometry_msgs_generate_messages_cpp: catatron_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 .PHONY : geometry_msgs_generate_messages_cpp
 
 # fast build rule for target.
 geometry_msgs_generate_messages_cpp/fast:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f notspot_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make notspot_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f catatron_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make catatron_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
-notspot_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f CMakeFiles/Makefile2 notspot_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-.PHONY : notspot_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+catatron_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f CMakeFiles/Makefile2 catatron_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+.PHONY : catatron_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_nodejs: notspot_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+geometry_msgs_generate_messages_nodejs: catatron_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 .PHONY : geometry_msgs_generate_messages_nodejs
 
 # fast build rule for target.
 geometry_msgs_generate_messages_nodejs/fast:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f notspot_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make notspot_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f catatron_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make catatron_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
 .PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-notspot_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f CMakeFiles/Makefile2 notspot_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : notspot_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+catatron_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f CMakeFiles/Makefile2 catatron_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : catatron_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_cpp: notspot_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+std_msgs_generate_messages_cpp: catatron_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 .PHONY : std_msgs_generate_messages_cpp
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(MAKE) -f notspot_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make notspot_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(MAKE) -f catatron_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make catatron_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 # Help Target
@@ -431,6 +431,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/sudharsan/Documents/drive/Catatron_catatron/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

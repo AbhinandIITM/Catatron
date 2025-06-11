@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>catatron_gazebo</name>
+  <version>1.0.0</version>
+  <description>The catatron_gazebo package</description>
+
+  <maintainer email="lcatatronl@gmail.com">lcatatronl</maintainer>
+
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>

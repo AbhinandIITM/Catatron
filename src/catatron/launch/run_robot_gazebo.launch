@@ -1,0 +1,14 @@
+<launch>
+
+    <!-- Gazebo Simulation 
+    <include file="$(find catatron_gazebo)/launch/simulation.launch" />
+    -->
+    
+    <!-- Joystick -->
+    <include file="$(find catatron_joystick)/launch/ramped_joystick.launch" />
+
+    <!-- Robot Controller -->
+    <include 
+        file="$(find catatron_controller)/launch/robot_controller.launch"/>
+
+</launch>
