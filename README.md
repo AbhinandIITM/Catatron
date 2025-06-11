@@ -5,6 +5,8 @@ This repository was developed as part of Project Catatron, under the Tech Ambien
 It contains the complete codebase for simulating and controlling a quadruped robot, including the driver code and tests for hardware integration and deployment on the physical robot.
 
 
+## Setting up the workspace
+```
 # Initialize catkin workspace
 cd src
 catkin_init_workspace
@@ -27,6 +29,10 @@ cp -r RoboticsUtilities ~/.local/lib/python3.8/site-packages
 roscd catatron_joystick/scripts
 chmod +x ramped_joystick.py
 
+```
+## Running the code
+
+```
 cd ../../../
 
 # Source the setup script again (in case the terminal was restarted)
@@ -34,6 +40,8 @@ source devel/setup.bash
 
 # Launch the robot simulation
 roslaunch notspot run_robot_gazebo.launch
+
+```
 
 
 ## Gazebo Simulation <br>
