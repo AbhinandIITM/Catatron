@@ -1,5 +1,5 @@
 ## Project Catatron
-📘 About This Project
+## 📘 About This Project
 
 This repository was developed as part of Project Catatron, under the Tech Ambience Vertical, Envisage, Centre for Innovation (CFI), IIT Madras.
 It contains the complete codebase for simulating and controlling a quadruped robot, including the driver code and tests for hardware integration and deployment on the physical robot.
@@ -55,6 +55,11 @@ roslaunch notspot run_robot_gazebo.launch
 
 ### Trot motion <br>
 ![](https://github.com/AbhinandIITM/Catatron/blob/main/trot.gif) <br>
+
+## 📚 References
+
+Some portions of this codebase are adapted from the [notspot_sim_py](https://github.com/lnotspotl/notspot_sim_py) repository.
+We acknowledge and thank the original authors for their contributions.
 
 
 
